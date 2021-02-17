@@ -1,7 +1,8 @@
 import React from "react";
 import "./Navigation.scss";
 import logo from "../../images/logo.svg";
-import { Nav, Navbar } from "react-bootstrap";
+import sun from "../../images/Sun.svg";
+import { Button, Nav, Navbar } from "react-bootstrap";
 
 export default function NavigationBar() {
     return (
@@ -18,6 +19,9 @@ export default function NavigationBar() {
                     <Nav.Link href="#events">Events</Nav.Link>
                     <Nav.Link href="#about">About</Nav.Link>
                     <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Button>
+                        <img src={sun} alt="toggle-light" />
+                    </Button>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

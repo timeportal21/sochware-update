@@ -1,3 +1,17 @@
+.navbar-nav {
+    a {
+        // font-size: 22px !important;
+        font-weight: 600px !important;
+    }
+    button,
+    button:hover,
+    button:active,
+    button:focus {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+}
 .nav-link {
     color: #fff !important;
     .nav-link:hover {
@@ -6,6 +20,25 @@
 }
 .nav-link.active {
     border-radius: 6px;
-    color: red !important;
+    color: #000 !important;
     background-color: #fff !important;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        padding: 1.5rem 144px !important;
+    }
+
+    .nav-link {
+        margin-right: 59px;
+    }
+    .nav-link.active {
+        width: 100px !important;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
 }
