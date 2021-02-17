@@ -5,10 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
+import LightToggleProvider from "./context/LightToggleContext";
 
 ReactDOM.render(
     <BrowserRouter>
-        <App />
+        <LightToggleProvider>
+            <App />
+        </LightToggleProvider>
     </BrowserRouter>,
     document.getElementById("root")
 );
