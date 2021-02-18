@@ -1,0 +1,27 @@
+.hero-section {
+    margin-top: 100px;
+}
+
+.hero-info {
+    width: 800px;
+    margin-left: 168px;
+    h1 {
+        font-size: 70px;
+    }
+    p {
+        line-height: 4.5;
+        font-size: 24px;
+    }
+    button {
+        svg {
+            font-size: 26px !important;
+        }
+    }
+}
+
+.hero-dark {
+    color: #fff;
+}
+.hero-light {
+    color: #000;
+}

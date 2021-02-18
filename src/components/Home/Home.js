@@ -1,10 +1,11 @@
 import React from "react";
+import HeroSection from "../HeroSection/HeroSection";
 
-function Home() {
+function Home({ heroColor }) {
     return (
-        <div>
-            <p>this is home page</p>
-        </div>
+        <>
+            <HeroSection heroColor={heroColor} />
+        </>
     );
 }
 

@@ -1,0 +1,22 @@
+.root-dark {
+    background-color: #3f3d56;
+}
+
+.root-light {
+    background-color: #fff;
+}
+
+.custom-button {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    font-size: 30px !important;
+    padding: 6px 36px !important;
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px !important;
+    }
+}
