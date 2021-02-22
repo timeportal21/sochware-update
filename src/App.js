@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import { LightContext } from "./context/LightToggleContext";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     const { isDark, dark, light, toggleLight } = useContext(LightContext);
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/" exact={true}>
                     <Home heroColor={heroColor} />
                 </Route>
+                <Footer logo={logo} />
             </div>
         </Fragment>
     );
