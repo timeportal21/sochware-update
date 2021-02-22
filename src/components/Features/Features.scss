@@ -1,9 +1,9 @@
 .our-feature {
-    margin-top: -200px;
     min-height: 943.35px;
 }
 .feature-title {
     text-align: center;
+    text-transform: uppercase;
     color: #fff;
 }
 
@@ -44,4 +44,10 @@
 
 .group-title {
     text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .our-feature {
+        margin-top: -200px;
+    }
 }

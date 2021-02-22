@@ -1,0 +1,45 @@
+.enhance-section,
+.dark {
+    .enhance-title {
+        color: #fff !important;
+    }
+    .number-show {
+        color: #fff !important;
+    }
+}
+
+.enhance-section,
+.light {
+    .enhance-title {
+        color: #000;
+    }
+    .number-show {
+        color: #000;
+    }
+}
+.enhance-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.enhance-content {
+    padding: 2vw 18vw 12vw 18vw;
+}
+
+.group-number {
+    padding: 58px;
+    margin-bottom: 36px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.number-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.number-show {
+    text-align: center;
+}
