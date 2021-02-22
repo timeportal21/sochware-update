@@ -17,7 +17,7 @@ function HeroSection({ heroColor }) {
                         We’re here to provide you with the best there is to
                         offer.
                     </p>
-                    <Button className="custom-button">
+                    <Button className="custom-button" size="sm">
                         Learn More <IoChevronForwardSharp />
                     </Button>
                 </div>

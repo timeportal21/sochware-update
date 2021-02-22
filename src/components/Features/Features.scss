@@ -1,0 +1,47 @@
+.our-feature {
+    margin-top: -200px;
+    min-height: 943.35px;
+}
+.feature-title {
+    text-align: center;
+    color: #fff;
+}
+
+.feature-button {
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+}
+
+.feature-content {
+    padding: 2vw 12vw 12vw 12vw;
+}
+.group-feature {
+    padding: 58px;
+    margin-bottom: 36px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.group-title {
+    color: #fff;
+    &.group-title h2 {
+        font-size: 37.26px;
+        margin-bottom: 32px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.group-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.group-title {
+    text-align: center;
+}
