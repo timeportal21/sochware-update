@@ -9,93 +9,91 @@ import loremIcon from "../../images/lorem_orange.svg";
 import ipsumIcon from "../../images/Ipsum.svg";
 import trainingIcon from "../../images/training.svg";
 
-function SochwareEnhance() {
+function SochwareEnhance({ heroColor }) {
     return (
-        <section className="enhance-section dark">
+        <section className="enhance-section">
             <div className="enhance-title">
                 <h1>sochware in numbers </h1>
             </div>
             <div className="enhance-content">
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
                                 <img src={medalIcon} alt="" />
                             </div>
-                            <div className="number-show">
+                            <div className={`number-show ${heroColor}`}>
                                 <p>3 Awards</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
                                 <img src={eventIcon} alt="" />
                             </div>
-                            <div className="number-show">
+                            <div className={`number-show ${heroColor}`}>
                                 <p>25+ Event</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
                                 <img src={clientIcon} alt="" />
                             </div>
-                            <div className="number-show">
+                            <div className={`number-show ${heroColor}`}>
                                 <p>21 Client</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
                                 <img src={mediaIcon} alt="" />
                             </div>
-                            <div className="number-show">
+                            <div className={`number-show ${heroColor}`}>
                                 <p>13 Media</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
                                 <img src={staffIcon} alt="" />
                             </div>
-                            <div className="number-show">
+                            <div className={`number-show ${heroColor}`}>
                                 <p>12 Staff</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
-                                <img src={loremIcon} alt="" />
+                                <img src={staffIcon} alt="" />
                             </div>
-                            <div className="number-show">
-                                <p>10 Lorem</p>
+                            <div className={`number-show ${heroColor}`}>
+                                <p>12 Staff</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
-                                <img src={ipsumIcon} alt="" />
+                                <img src={staffIcon} alt="" />
                             </div>
-                            <div className="number-show">
-                                <p>30 Ipsum</p>
+                            <div className={`number-show ${heroColor}`}>
+                                <p>12 Staff</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-12 col-xl-3 col-md-6 col-lg-4">
                         <div className="group-number">
                             <div className="number-icon">
-                                <img src={trainingIcon} alt="" />
+                                <img src={staffIcon} alt="" />
                             </div>
-                            <div className="number-show">
-                                <p>100 + Training</p>
+                            <div className={`number-show ${heroColor}`}>
+                                <p>12 Staff</p>
                             </div>
                         </div>
                     </div>

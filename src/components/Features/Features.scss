@@ -4,7 +4,7 @@
 .feature-title {
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    
 }
 
 .feature-button {
@@ -13,9 +13,9 @@
     padding: 64px;
 }
 
-.feature-content {
-    padding: 2vw 12vw 12vw 12vw;
-}
+// .feature-content {
+//     padding: 2vw 12vw 12vw 12vw;
+// }
 .group-feature {
     padding: 58px;
     margin-bottom: 36px;
@@ -24,7 +24,6 @@
 }
 
 .group-title {
-    color: #fff;
     &.group-title h2 {
         font-size: 37.26px;
         margin-bottom: 32px;
