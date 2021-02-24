@@ -15,6 +15,8 @@ const LightToggleProvider = (props) => {
             logo: dark_logo,
             lightClass: "dark-class",
             heroColor: "hero-dark",
+            customButton: "dark-btn",
+            borderButton: "custom-btn-sm-border-dark",
         },
         light: {
             bg: "root-light",
@@ -22,6 +24,8 @@ const LightToggleProvider = (props) => {
             logo: light_logo,
             lightClass: "light-class",
             heroColor: "hero-light",
+            customButton: "light-btn",
+            borderButton: "custom-btn-sm-border-light",
         },
     });
     const toggleLight = () => {

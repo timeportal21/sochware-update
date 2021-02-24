@@ -3,16 +3,22 @@ import { Button } from "react-bootstrap";
 import "./Features.scss";
 import fastDamaro from "../../images/Group5.svg";
 
-function Features({ heroColor }) {
+function Features({ heroColor, customButton, borderButton }) {
     return (
         <section className="our-feature">
             <div className={`feature-title ${heroColor}`}>
                 <h1>OUR FEATURES</h1>
                 <div className="feature-button">
-                    <Button className="custom-button mr-2" size="sm">
+                    <Button
+                        className={`custom-button custom-btn-sm mr-2 ${customButton} `}
+                        size="sm"
+                    >
                         Learn More
                     </Button>
-                    <Button className="custom-button" size="sm">
+                    <Button
+                        className={`custom-button custom-btn-sm custom-btn-sm-border ${customButton} ${borderButton}`}
+                        size="sm"
+                    >
                         View All
                     </Button>
                 </div>

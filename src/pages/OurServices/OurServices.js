@@ -36,7 +36,7 @@ function OurServices({ heroColor }) {
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                     </p>
-                                    <button className="btn btn-primary">
+                                    <button className="btn custom-button-sm ">
                                         How To Benefit
                                     </button>
                                 </div>

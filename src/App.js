@@ -10,7 +10,15 @@ import About from "./pages/About/About";
 
 function App() {
     const { isDark, dark, light, toggleLight } = useContext(LightContext);
-    const { bg, mode, logo, lightClass, heroColor } = isDark ? dark : light;
+    const {
+        bg,
+        mode,
+        logo,
+        lightClass,
+        heroColor,
+        customButton,
+        borderButton,
+    } = isDark ? dark : light;
     return (
         <Fragment>
             <div className={bg}>
@@ -21,7 +29,11 @@ function App() {
                     logo={logo}
                 />
                 <Route path="/" exact={true}>
-                    <Home heroColor={heroColor} />
+                    <Home
+                        heroColor={heroColor}
+                        customButton={customButton}
+                        borderButton={borderButton}
+                    />
                 </Route>
                 <Route path="/services" exact={true}>
                     <OurServices heroColor={heroColor} />

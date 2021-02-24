@@ -3,11 +3,15 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import Features from "../../components/Features/Features";
 import SochwareEnhance from "../../components/SochwareEnhance/SochwareEnhance";
 
-function Home({ heroColor }) {
+function Home({ heroColor, customButton, borderButton }) {
     return (
         <>
-            <HeroSection heroColor={heroColor} />
-            <Features heroColor={heroColor} />
+            <HeroSection heroColor={heroColor} customButton={customButton} />
+            <Features
+                heroColor={heroColor}
+                customButton={customButton}
+                borderButton={borderButton}
+            />
             <SochwareEnhance heroColor={heroColor} />
         </>
     );
