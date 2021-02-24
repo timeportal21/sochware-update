@@ -1,18 +1,17 @@
 .our-services {
     padding-top: 50px;
+    padding-bottom: 120px;
     .service-title {
         margin-bottom: 95.48px;
     }
 }
-.content-row {
-    margin-bottom: 178.63px;
-    .content-head h2 {
-        font-weight: 700 !important;
-    }
-}
+
 .service-content {
     .content-row {
-        margin-bottom: 178.63px !important;
+        margin-bottom: 125px !important;
+    }
+    .content-head h2 {
+        font-weight: 700 !important;
     }
     .card {
         background-color: transparent !important;
@@ -22,14 +21,36 @@
         padding: 56px 0 0 0;
     }
     .card-title {
-        font-size: 55px;
+        font-size: 45px;
         font-weight: 700;
         margin-bottom: 29px;
     }
     .card-text {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         text-align: justify;
         margin-bottom: 54.93px;
+    }
+}
+.card-img-top {
+    width: 100%;
+    object-fit: cover !important;
+    height: 100% !important;
+}
+
+@media (max-width: 991.99px) {
+    .our-services .card-body {
+        padding: 14px !important;
+    }
+    .our-services .service-content .content-row {
+        margin-bottom: 45.63px !important;
+    }
+}
+@media (max-width: 767.99px) {
+    .our-services .card-body {
+        padding: 14px !important;
+    }
+    .our-services .service-content .content-row {
+        margin-bottom: 45.63px !important;
     }
 }

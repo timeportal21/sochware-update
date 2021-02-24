@@ -1,0 +1,45 @@
+.about-section {
+    padding-top: 50px;
+    padding-bottom: 120px;
+
+    .about-title {
+        margin-bottom: 95.48px;
+    }
+    .card {
+        background-color: transparent !important;
+        border: none !important;
+    }
+    .card-body {
+        padding: 0;
+        .card-title {
+            font-size: 45px;
+            font-weight: 700;
+        }
+        .card-text {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: justify;
+        }
+    }
+    .about-content {
+        .content-row {
+            margin-bottom: 178.63px !important;
+        }
+    }
+}
+@media (max-width: 991.99px) {
+    .about-section .card-body {
+        padding: 14px !important;
+    }
+    .about-section .about-content .content-row {
+        margin-bottom: 45.63px !important;
+    }
+}
+@media (max-width: 767.99px) {
+    .about-section .card-body {
+        padding: 14px !important;
+    }
+    .about-section .about-content .content-row {
+        margin-bottom: 45.63px !important;
+    }
+}

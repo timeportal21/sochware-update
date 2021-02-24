@@ -6,6 +6,7 @@ import { LightContext } from "./context/LightToggleContext";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import OurServices from "./pages/OurServices/OurServices";
+import About from "./pages/About/About";
 
 function App() {
     const { isDark, dark, light, toggleLight } = useContext(LightContext);
@@ -24,6 +25,9 @@ function App() {
                 </Route>
                 <Route path="/services" exact={true}>
                     <OurServices heroColor={heroColor} />
+                </Route>
+                <Route path="/about" exact={true}>
+                    <About heroColor={heroColor} />
                 </Route>
                 <Footer />
             </div>
