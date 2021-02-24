@@ -12,8 +12,8 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className={`ml-auto ${lightClass}`}>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#service">Service</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/services">Service</Nav.Link>
                         <Nav.Link href="#blog">Blog</Nav.Link>
                         <Nav.Link href="#events">Events</Nav.Link>
                         <Nav.Link href="#about">About</Nav.Link>
