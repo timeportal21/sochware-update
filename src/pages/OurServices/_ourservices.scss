@@ -1,20 +1,35 @@
 .our-services {
-    padding-top: 56px;
+    padding-top: 50px;
     .service-title {
         margin-bottom: 95.48px;
     }
 }
 .content-row {
     margin-bottom: 178.63px;
+    .content-head h2 {
+        font-weight: 700 !important;
+    }
 }
-.service-description {
-    padding: 44px 44px 44px 50px;
-}
-.service-image img {
-    width: 100%;
-    border-radius: 27px;
-}
-.content-body {
-    text-align: justify;
-    margin-bottom: 54px;
+.service-content {
+    .content-row {
+        margin-bottom: 178.63px !important;
+    }
+    .card {
+        background-color: transparent !important;
+        border: none !important;
+    }
+    .card-body {
+        padding: 56px 0 0 0;
+    }
+    .card-title {
+        font-size: 55px;
+        font-weight: 700;
+        margin-bottom: 29px;
+    }
+    .card-text {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: justify;
+        margin-bottom: 54.93px;
+    }
 }
