@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import OurServices from "./pages/OurServices/OurServices";
 import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
     const { isDark, dark, light, toggleLight } = useContext(LightContext);
@@ -28,18 +29,27 @@ function App() {
                     mode={mode}
                     logo={logo}
                 />
-                <Route path="/" exact={true}>
+                <Route path="/home" exact>
                     <Home
                         heroColor={heroColor}
                         customButton={customButton}
                         borderButton={borderButton}
                     />
                 </Route>
-                <Route path="/services" exact={true}>
-                    <OurServices heroColor={heroColor} />
+                <Route path="/services" exact>
+                    <OurServices
+                        heroColor={heroColor}
+                        customButton={customButton}
+                    />
                 </Route>
-                <Route path="/about" exact={true}>
-                    <About heroColor={heroColor} />
+                <Route path="/about" exact>
+                    <About heroColor={heroColor} customButton={customButton} />
+                </Route>
+                <Route path="/contact" exact>
+                    <Contact
+                        heroColor={heroColor}
+                        customButton={customButton}
+                    />
                 </Route>
                 <Footer />
             </div>
