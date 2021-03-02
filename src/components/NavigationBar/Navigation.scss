@@ -119,3 +119,11 @@
         background: #2836a0;
     }
 }
+
+@media (max-width: 991.98px) {
+    .dark-class {
+        .animation {
+            background: unset;
+        }
+    }
+}

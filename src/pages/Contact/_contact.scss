@@ -52,6 +52,22 @@
     }
 }
 
+.slick-dots li button:before {
+    width: 20px !important;
+    height: 5px !important;
+    background: #fff;
+    content: "" !important;
+}
+
+.text-area-message {
+    position: relative;
+    button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .slider-content {
         .card {

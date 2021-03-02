@@ -1,6 +1,6 @@
 import { Fragment, useContext } from "react";
 import "./App.scss";
-import { Route } from "react-router-dom";
+import { Redirect, Route } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import { LightContext } from "./context/LightToggleContext";
 import Footer from "./components/Footer/Footer";
@@ -29,6 +29,7 @@ function App() {
                     mode={mode}
                     logo={logo}
                 />
+
                 <Route path="/home" exact>
                     <Home
                         heroColor={heroColor}
@@ -51,6 +52,8 @@ function App() {
                         customButton={customButton}
                     />
                 </Route>
+                <Redirect from="/" to="/home" exact />
+
                 <Footer />
             </div>
         </Fragment>

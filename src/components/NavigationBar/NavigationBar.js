@@ -12,47 +12,26 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className={`ml-auto ${lightClass}`}>
-                        <NavLink
-                            className="nav-link"
-                            activeClassName="active"
-                            to="/home"
-                        >
+                    <Nav
+                        className={`ml-auto ${lightClass}`}
+                        defaultActiveKey="/home"
+                    >
+                        <NavLink className="nav-link" to="/home">
                             Home
                         </NavLink>
-                        <NavLink
-                            className="nav-link"
-                            activeClassName="active"
-                            to="/services"
-                        >
+                        <NavLink className="nav-link" to="/services">
                             Service
                         </NavLink>
-                        <NavLink
-                            className="nav-link"
-                            to="/blog"
-                            activeClassName="active"
-                        >
+                        <NavLink className="nav-link" to="/blog">
                             Blog
                         </NavLink>
-                        <NavLink
-                            className="nav-link"
-                            to="/events"
-                            activeClassName="active"
-                        >
+                        <NavLink className="nav-link" to="/events">
                             Events
                         </NavLink>
-                        <NavLink
-                            activeClassName="active"
-                            className="nav-link"
-                            to="/about"
-                        >
+                        <NavLink className="nav-link" to="/about">
                             About
                         </NavLink>
-                        <NavLink
-                            className="nav-link"
-                            to="/contact"
-                            activeClassName="active"
-                        >
+                        <NavLink className="nav-link" to="/contact">
                             Contact
                         </NavLink>
                         <div className="animation start-home"></div>

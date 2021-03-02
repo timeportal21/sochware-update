@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import aboutImage from "../../images/about_image.png";
+import { BsFillChatDotsFill } from "react-icons/bs";
 
 function Contact({ heroColor }) {
     const [testimonialContent, setTestimonialContent] = useState([
@@ -145,13 +146,18 @@ function Contact({ heroColor }) {
                                                         <label htmlFor="">
                                                             Message
                                                         </label>
-                                                        <textarea
-                                                            name=""
-                                                            id=""
-                                                            cols="30"
-                                                            rows="8"
-                                                            className="form-control"
-                                                        ></textarea>
+                                                        <div className="text-area-message">
+                                                            <textarea
+                                                                name=""
+                                                                id=""
+                                                                cols="30"
+                                                                rows="8"
+                                                                className="form-control"
+                                                            ></textarea>
+                                                            <button type="submit" className="btn btn-md">
+                                                                <BsFillChatDotsFill />
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
