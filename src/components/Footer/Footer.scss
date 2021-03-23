@@ -19,6 +19,8 @@
 .footer-content {
     position: relative;
     z-index: 99;
+    margin-left: 3rem !important;
+    margin-bottom: 7rem;
     .footer-logo {
         margin-bottom: 30px;
     }
@@ -47,6 +49,9 @@
 @media (max-width: 768px) {
     .footer-image {
         display: none !important;
+    }
+    .footer-content {
+        margin: 0 !important;
     }
 }
 

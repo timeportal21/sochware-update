@@ -16,8 +16,8 @@ function Footer({ logo }) {
         <section className="footer-section">
             <div className="container ">
                 <div className="row">
-                    <div className="col-12 col-md-7 col-lg-3">
-                        <div className="footer-content ml-5">
+                    <div className="col-12 col-md-7 col-lg-4">
+                        <div className="footer-content">
                             <div className="footer-logo">
                                 <img
                                     src={footerLogo}
