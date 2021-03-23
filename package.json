@@ -1,5 +1,6 @@
 {
   "name": "sochware_new_site",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

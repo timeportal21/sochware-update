@@ -82,7 +82,7 @@ function Career({ heroColor }) {
             <section className={`hire-now ${heroColor}`}>
                 <div className="container">
                     <h1>We are hiring now</h1>
-                    <div className="filter-by float-right">
+                    <div className="filter-by d-flex justify-content-end">
                         <div className="form-group row">
                             <label htmlFor="">Filter By</label>
                             <select name="" id="" className="form-control">
@@ -91,6 +91,7 @@ function Career({ heroColor }) {
                                 <option value="">2</option>
                                 <option value="">3</option>
                             </select>
+                            <div className="dropdown-divider"></div>
                         </div>
                     </div>
                     <div className="career-description">
@@ -231,7 +232,7 @@ function Career({ heroColor }) {
                                                                 type="button"
                                                                 className="btn btn-primary float-right disabled"
                                                             >
-                                                                Apply
+                                                                Hired
                                                             </button>
                                                         </Card.Footer>
                                                     </Card.Body>
@@ -305,7 +306,7 @@ function Career({ heroColor }) {
                                                                 type="button"
                                                                 className="btn btn-primary float-right disabled"
                                                             >
-                                                                Apply
+                                                                Hired
                                                             </button>
                                                         </Card.Footer>
                                                     </Card.Body>
@@ -379,7 +380,7 @@ function Career({ heroColor }) {
                                                                 type="button"
                                                                 className="btn btn-primary float-right disabled"
                                                             >
-                                                                Apply
+                                                                Hired
                                                             </button>
                                                         </Card.Footer>
                                                     </Card.Body>
