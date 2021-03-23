@@ -1,0 +1,58 @@
+.hire-now {
+    margin-top: 100px;
+    margin-bottom: 22em;
+    h1 {
+        font-weight: 700;
+    }
+}
+
+.filter-by {
+    border-bottom: 1px solid;
+    select {
+        width: 10em;
+    }
+    label {
+        padding: 6px;
+    }
+}
+.career-description {
+    margin-top: 34px;
+    .sw-row {
+        padding: 30px;
+    }
+    .career-card {
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .card-footer {
+            border: none;
+            background-color: unset;
+            padding: 2.75rem 1.25rem;
+            button {
+                background-color: #2836a0;
+                border: #2836a0;
+            }
+        }
+    }
+    .accordion {
+        svg {
+            font-size: 2em;
+        }
+        .hero-light {
+            background-color: #e1e3f5 !important;
+            border-color: #e1e3f5 !important;
+        }
+    }
+}
+
+.notified {
+    position: relative;
+    background-color: #e1e3f5;
+    padding: 10em;
+    margin-top: 6em;
+    // .notified-form {
+    //     position: absolute;
+    //     top: 74%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+}

@@ -19,6 +19,9 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                         <NavLink className="nav-link" to="/home">
                             Home
                         </NavLink>
+                        <NavLink className="nav-link" to="/career">
+                            Career
+                        </NavLink>
                         <NavLink className="nav-link" to="/services">
                             Service
                         </NavLink>

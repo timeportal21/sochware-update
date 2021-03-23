@@ -4,13 +4,12 @@
     .card {
         background-color: transparent !important;
         border: none !important;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 2rem;
+        padding: 2.4rem;
     }
     .card-body {
-        padding: 0;
-        .card-title {
-            font-size: 45px;
-            font-weight: 700;
-        }
         .card-text {
             font-size: 18px;
             font-weight: 400;
@@ -22,6 +21,59 @@
             margin-bottom: 178.63px !important;
         }
     }
+}
+.aboutus-section {
+    margin-bottom: 7em;
+}
+
+.why-sochware ul {
+    list-style: none;
+    // list-style-image: url("../../images/bullet-point.svg");
+    padding-left: 1em;
+    li {
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            background-image: url("../../images/bullet-point.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 2em;
+        }
+    }
+}
+.team-slider {
+    background-color: #4c4a68;
+    .card {
+        box-shadow: unset !important;
+    }
+    .slick-slider {
+        background-color: #4c4a68;
+    }
+    .slick-dots {
+        position: unset !important;
+    }
+}
+.partners {
+    margin: 12em 0 12em 0;
+}
+.partner-logo {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-flow: row wrap;
+}
+.partner-circle {
+    width: 18%;
+    height: auto;
+    flex-basis: 8%;
+    border: 1px solid #c4c4c4;
+    background-color: #c4c4c4;
+    padding: 60px;
+    margin-right: 70px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
 }
 @media (max-width: 991.99px) {
     .about-section .card-body {

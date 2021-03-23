@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import OurServices from "./pages/OurServices/OurServices";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import Career from "./pages/Career/Career";
 
 function App() {
     const { isDark, dark, light, toggleLight } = useContext(LightContext);
@@ -37,6 +38,9 @@ function App() {
                         borderButton={borderButton}
                     />
                 </Route>
+                <Route path="/career" exact>
+                    <Career heroColor={heroColor} customButton={customButton} />
+                </Route>
                 <Route path="/services" exact>
                     <OurServices
                         heroColor={heroColor}
@@ -52,6 +56,7 @@ function App() {
                         customButton={customButton}
                     />
                 </Route>
+
                 <Redirect from="/" to="/home" exact />
 
                 <Footer />
