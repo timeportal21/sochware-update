@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
 import CustomModal from "../../components/common/modal/CustomModal";
+import { BsEnvelopeOpen } from "react-icons/bs";
 
 function ContextAwareToggle({ children, eventKey, callback, buttonColor }) {
     const currentEventKey = useContext(AccordionContext);
@@ -407,7 +408,12 @@ function Career({ heroColor }) {
                                     method="post"
                                     className="form-inline justify-content-center"
                                 >
-                                    <div className="form-group">
+                                    <div className="input-group">
+                                        <div className="input-group-prepend">
+                                            <div className="input-group-text">
+                                                <BsEnvelopeOpen />
+                                            </div>
+                                        </div>
                                         <input
                                             type="email"
                                             name="email"

@@ -1,0 +1,36 @@
+.site-footer {
+    background-color: #343349;
+    height: 40em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-logo {
+        margin-bottom: 15px !important;
+    }
+    .social-links {
+        margin-bottom: 10px !important;
+    }
+
+    .feedback-content {
+        margin-bottom: 10px !important;
+    }
+}

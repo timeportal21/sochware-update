@@ -22,8 +22,8 @@ function SochwareEnhance({ heroColor }) {
         { title: "Trainees", icon: trainingIcon, number: 100 },
     ]);
     return (
-        <section className="enhance-section">
-            <div className={`enhance-title ${heroColor}`}>
+        <section className={`enhance-section ${heroColor}`}>
+            <div className={`enhance-title`}>
                 <h1>sochware in numbers </h1>
             </div>
             <div className="enhance-content">
@@ -37,7 +37,7 @@ function SochwareEnhance({ heroColor }) {
                                 <div className="number-icon">
                                     <img src={data.icon} alt="" />
                                 </div>
-                                <div className={`number-show ${heroColor}`}>
+                                <div className={`number-show`}>
                                     <p>
                                         <AnimatedNumber
                                             value={50}

@@ -202,7 +202,7 @@ function About({ heroColor, customButton }) {
                     </div>
                     <div className="partner-logo">
                         {partners.map((data, i) => (
-                            <div className="partner-circle"></div>  
+                            <div className="partner-circle" key={i}></div>
                         ))}
                     </div>
                 </div>

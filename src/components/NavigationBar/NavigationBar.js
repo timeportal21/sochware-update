@@ -5,45 +5,47 @@ import { NavLink } from "react-router-dom";
 
 export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
     return (
-        <Navbar expand="lg">
-            <div className="container">
-                <Navbar.Brand href="#home">
-                    <img src={logo} alt="" />
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav
-                        className={`ml-auto ${lightClass}`}
-                        defaultActiveKey="/home"
-                    >
-                        <NavLink className="nav-link" to="/home">
-                            Home
-                        </NavLink>
-                        <NavLink className="nav-link" to="/career">
-                            Career
-                        </NavLink>
-                        <NavLink className="nav-link" to="/services">
-                            Service
-                        </NavLink>
-                        <NavLink className="nav-link" to="/blog">
-                            Blog
-                        </NavLink>
-                        <NavLink className="nav-link" to="/events">
-                            Events
-                        </NavLink>
-                        <NavLink className="nav-link" to="/about">
-                            About
-                        </NavLink>
-                        <NavLink className="nav-link" to="/contact">
-                            Contact
-                        </NavLink>
-                        <div className="animation start-home"></div>
-                        <Button onClick={toggleLight}>
-                            <img src={mode} alt="toggle-light" />
-                        </Button>
-                    </Nav>
-                </Navbar.Collapse>
-            </div>
-        </Navbar>
+        <header>
+            <Navbar expand="lg">
+                <div className="container">
+                    <Navbar.Brand href="#home">
+                        <img src={logo} alt="" />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav
+                            className={`ml-auto ${lightClass}`}
+                            defaultActiveKey="/home"
+                        >
+                            <NavLink className="nav-link" to="/home">
+                                Home
+                            </NavLink>
+                            <NavLink className="nav-link" to="/career">
+                                Career
+                            </NavLink>
+                            <NavLink className="nav-link" to="/services">
+                                Service
+                            </NavLink>
+                            <NavLink className="nav-link" to="/blog">
+                                Blog
+                            </NavLink>
+                            <NavLink className="nav-link" to="/events">
+                                Events
+                            </NavLink>
+                            <NavLink className="nav-link" to="/about">
+                                About
+                            </NavLink>
+                            <NavLink className="nav-link" to="/contact">
+                                Contact
+                            </NavLink>
+                            <div className="animation start-home"></div>
+                            <Button onClick={toggleLight}>
+                                <img src={mode} alt="toggle-light" />
+                            </Button>
+                        </Nav>
+                    </Navbar.Collapse>
+                </div>
+            </Navbar>
+        </header>
     );
 }

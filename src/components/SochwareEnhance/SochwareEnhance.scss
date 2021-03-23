@@ -1,6 +1,7 @@
 .enhance-section {
-    .enhance-title {
-        color: #fff;
+    padding-top: 128px;
+    &.hero-light {
+        background-color: #e1e3f5 !important;
     }
 }
 
@@ -10,7 +11,7 @@
 }
 
 .enhance-content {
-    padding: 2vw 18vw 12vw 18vw;
+    padding: 2vw 18vw 6vw 18vw;
 }
 
 .group-number {
