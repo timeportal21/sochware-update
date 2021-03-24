@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Features.scss";
 import fastDamaro from "../../images/Group5.svg";
 
 function Features({ heroColor, customButton, borderButton }) {
+    const [featureContent, setFeatureContent] = useState([
+        {
+            title: "Fast",
+            image: fastDamaro,
+            detail:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        },
+        {
+            title: "Efficient",
+            image: fastDamaro,
+            detail:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        },
+        {
+            title: "Professional",
+            image: fastDamaro,
+            detail:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        },
+        {
+            title: "Experience",
+            image: fastDamaro,
+            detail:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        },
+    ]);
+
     return (
         <section className="our-feature">
             <div className={`feature-title ${heroColor}`}>
@@ -26,78 +53,23 @@ function Features({ heroColor, customButton, borderButton }) {
             <div className="container">
                 <div className="feature-content">
                     <div className="row">
-                        <div className="col-12 col-xl-3 col-md-6 col-lg-4">
-                            <div className="group-feature">
-                                <div className="group-image">
-                                    <img
-                                        src={fastDamaro}
-                                        alt=""
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className={`group-title ${heroColor}`}>
-                                    <h2>Fast</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-xl-3 col-md-6 col-lg-4">
-                            <div className="group-feature">
-                                <div className="group-image">
-                                    <img
-                                        src={fastDamaro}
-                                        alt=""
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className={`group-title ${heroColor}`}>
-                                    <h2>Fast</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                    </p>
+                        {featureContent.map((data, i) => (
+                            <div className="col-12 col-xl-3 col-md-6 col-lg-4">
+                                <div className="group-feature">
+                                    <div className="group-image">
+                                        <img
+                                            src={data.image}
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                    </div>
+                                    <div className={`group-title ${heroColor}`}>
+                                        <h2>{data.title}</h2>
+                                        <p>{data.detail}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-12 col-xl-3 col-md-6 col-lg-4">
-                            <div className="group-feature">
-                                <div className="group-image">
-                                    <img
-                                        src={fastDamaro}
-                                        alt=""
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className={`group-title ${heroColor}`}>
-                                    <h2>Fast</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-xl-3 col-md-6 col-lg-4">
-                            <div className="group-feature">
-                                <div className="group-image">
-                                    <img
-                                        src={fastDamaro}
-                                        alt=""
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className={`group-title ${heroColor}`}>
-                                    <h2>Fast</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
