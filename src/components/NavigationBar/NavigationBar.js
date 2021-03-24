@@ -8,7 +8,7 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
         <header>
             <Navbar expand="lg">
                 <div className="container">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

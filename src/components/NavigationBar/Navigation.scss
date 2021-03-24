@@ -1,6 +1,7 @@
 header {
     padding: 30px;
 }
+
 .navbar-nav {
     position: relative;
     border-radius: 8px;
@@ -76,6 +77,18 @@ header {
             left: 550px;
         }
     }
+    .nav-link:nth-child(7) {
+        width: 120px;
+        &.active ~ .animation {
+            width: 120px;
+            left: 670px;
+        }
+    }
+}
+.navbar-brand {
+    img {
+        width: 144px;
+    }
 }
 
 .navbar {
@@ -113,7 +126,7 @@ header {
     .nav-link.active {
         border-radius: 6px;
         color: #fafbfc !important;
-        background-color: #2836a0 !important;
+        background-color: #174587 !important;
     }
     .animation {
         background: #2836a0;
@@ -121,9 +134,16 @@ header {
 }
 
 @media (max-width: 991.98px) {
-    .dark-class {
+    .dark-class,
+    .light-class {
         .animation {
             background: unset;
+        }
+    }
+    .navbar-brand {
+        img {
+            width: 50%;
+            margin-left: 25%;
         }
     }
 }

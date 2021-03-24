@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.scss";
+import "./_footer.scss";
 import facebookIcon from "../../images/Facebook.svg";
 import twitterIcon from "../../images/Twitter.svg";
 import instagramIcon from "../../images/Insta.svg";
@@ -7,7 +7,7 @@ import mailIcon from "../../images/Mail.svg";
 import dribbleIcon from "../../images/Dribbble.svg";
 import miniRocketIcon from "../../images/mini-rocket.svg";
 import footerImage from "../../images/Footer-Image.svg";
-import footerLogo from "../../images/logo.svg";
+import footerLogo from "../../images/sochware_final.png";
 
 import { Form, InputGroup } from "react-bootstrap";
 
@@ -26,16 +26,16 @@ function Footer({ logo }) {
                                 />
                             </div>
                             <div className="social-links">
-                                <a href="https://www.facebook.com">
+                                <a href="https://www.facebook.com/sochware/">
                                     <img src={facebookIcon} alt="" />
                                 </a>
-                                <a href="https://www.facebook.com">
+                                <a href="https://www.instagram.com/sochware/?hl=en">
                                     <img src={instagramIcon} alt="" />
                                 </a>
-                                <a href="https://www.facebook.com">
+                                <a href="mailto:mail@sochware.com">
                                     <img src={mailIcon} alt="" />
                                 </a>
-                                <a href="https://www.facebook.com">
+                                <a href="https://twitter.com/sochware?lang=en">
                                     <img src={twitterIcon} alt="" />
                                 </a>
                                 <a href="https://www.facebook.com">
