@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react";
-import { Fragment } from "react";
+import React, { useState, useContext, Fragment } from "react";
 import "./_career.scss";
 import {
     Accordion,
