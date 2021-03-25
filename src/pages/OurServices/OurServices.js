@@ -4,11 +4,9 @@ import cpuImage from "../../images/cpu.png";
 import softwareImage from "../../images/software.png";
 import trainingImage from "../../images/training.png";
 import communityImage from "../../images/community.png";
-import { IoChevronForwardSharp } from "react-icons/io5";
 import {
     Accordion,
     AccordionContext,
-    Card,
     useAccordionToggle,
 } from "react-bootstrap";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";

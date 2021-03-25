@@ -1,0 +1,21 @@
+.working-section {
+    padding: 100px;
+    &.hero-light {
+        background-color: #e1e3f5;
+    }
+}
+
+.working-title {
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+.work-content {
+    padding-top: 2vw;
+}
+
+@media (min-width: 1200px) {
+    .working-section {
+        margin-top: -346px;
+    }
+}
