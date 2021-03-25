@@ -39,17 +39,30 @@
     // width: 200px;
     // height: 200px;
     img {
-         margin-right: 4px;
+        margin-right: 4px;
         width: 100%;
         height: auto;
         object-fit: contain;
     }
 }
+.swservice-row {
+    margin-bottom: 34px;
+    .image-service {
+        transition: transform .5s ease;
+        a {
+            color: #fff !important;
+            text-decoration: none;
+            position: absolute;
+            top: 75%;
+            left: 25%;
+        }
+    }
+    .image-service:hover {
+        transform: scale(1.2);
+    }
+}
 
 // .swservice-row {
-//     position: absolute;
-//     top: 74vh;
-//     left: -38%;
 //     .image-service {
 //         width: 200px;
 //         height: 200px;
@@ -81,6 +94,12 @@
         margin-bottom: 45.63px !important;
     }
 }
+@media (min-width: 992px) {
+    .accordion-content {
+        margin-right: 3%;
+    }
+}
+
 @media (max-width: 767.99px) {
     .our-services .card-body {
         padding: 14px !important;

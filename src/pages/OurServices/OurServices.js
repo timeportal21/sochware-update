@@ -78,121 +78,198 @@ function OurServices({ heroColor, customButton }) {
                     {ourServices.map((data, i) => {
                         if (i % 2 === 0) {
                             return (
-                                <div className="card content-row" key={i}>
-                                    <div className="row g-0">
-                                        <div className="col-md-4">
-                                            <img
-                                                src={data.image}
-                                                alt="..."
-                                                className="card-img-top"
-                                            />
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div
-                                                className={`card-body pl-5 ${heroColor}`}
-                                            >
-                                                <h5 className="card-title">
-                                                    {data.title}
-                                                </h5>
-                                                <p className="card-text">
-                                                    {data.content}
-                                                </p>
-                                                <Accordion>
+                                <Accordion>
+                                    <div className="card content-row" key={i}>
+                                        <div className="row g-0">
+                                            <div className="col-md-4">
+                                                <img
+                                                    src={data.image}
+                                                    alt="..."
+                                                    className="card-img-top"
+                                                />
+                                            </div>
+                                            <div className="col-md-8">
+                                                <div
+                                                    className={`card-body pl-5 ${heroColor}`}
+                                                >
+                                                    <h5 className="card-title">
+                                                        {data.title}
+                                                    </h5>
+                                                    <p className="card-text">
+                                                        {data.content}
+                                                    </p>
+
                                                     <ContextAwareToggle
                                                         eventKey="0"
                                                         customButton={
                                                             customButton
                                                         }
                                                     ></ContextAwareToggle>
-                                                    <Accordion.Collapse eventKey="0">
-                                                        <div className="swservice-row row">
-                                                            <div className="col-sm-12 col-md-6 col-lg-2">
-                                                                <div className="image-service">
-                                                                    <img
-                                                                        src="https://www.w3schools.com/css/img_chania.jpg"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                            <div className="col-sm-12 col-md-6 col-lg-2">
-                                                                <div className="image-service">
-                                                                    <img
-                                                                        src="https://www.w3schools.com/css/img_chania.jpg"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                            <div className="col-sm-12 col-md-6 col-lg-2">
-                                                                <div className="image-service">
-                                                                    <img
-                                                                        src="https://www.w3schools.com/css/img_chania.jpg"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                            <div className="col-sm-12 col-md-6 col-lg-2">
-                                                                <div className="image-service">
-                                                                    <img
-                                                                        src="https://www.w3schools.com/css/img_chania.jpg"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                            <div className="col-sm-12 col-md-6 col-lg-2">
-                                                                <div className="image-service">
-                                                                    <img
-                                                                        src="https://www.w3schools.com/css/img_chania.jpg"
-                                                                        alt=""
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Accordion.Collapse>
-                                                </Accordion>
 
-                                                {/* <button
+                                                    {/* <button
                                                     className={`custom-button custom-btn-sm mr-2 ${customButton}  btn btn-primary btn-sm`}
                                                     size="sm"
                                                 >
                                                     How To Benefit
                                                     <IoChevronForwardSharp />
                                                 </button> */}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <Accordion.Collapse eventKey="0">
+                                        <div className="swservice-row row">
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Accordion.Collapse>
+                                </Accordion>
                             );
                         } else {
                             return (
-                                <div className="card content-row" key={i}>
-                                    <div className="row g-0">
-                                        <div className="col-md-8 order-1 order-md-0">
-                                            <div
-                                                className={`card-body pr-5 ${heroColor}`}
-                                            >
-                                                <h5 className="card-title">
-                                                    {data.title}
-                                                </h5>
-                                                <p className="card-text">
-                                                    {data.content}
-                                                </p>
-                                                <button
-                                                    className={`custom-button custom-btn-sm mr-2 ${customButton}  btn btn-primary btn-sm`}
+                                <Accordion>
+                                    <div className="card content-row" key={i}>
+                                        <div className="row g-0">
+                                            <div className="col-md-8 order-1 order-md-0">
+                                                <div
+                                                    className={`card-body pr-5 ${heroColor}`}
                                                 >
-                                                    How To Benefit
-                                                    <IoChevronForwardSharp />
-                                                </button>
+                                                    <h5 className="card-title">
+                                                        {data.title}
+                                                    </h5>
+                                                    <p className="card-text">
+                                                        {data.content}
+                                                    </p>
+                                                    <ContextAwareToggle
+                                                        eventKey="0"
+                                                        customButton={
+                                                            customButton
+                                                        }
+                                                    ></ContextAwareToggle>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-4 order-0 order-md-1">
+                                                <img
+                                                    src={data.image}
+                                                    alt="..."
+                                                    className="card-img-top"
+                                                />
                                             </div>
                                         </div>
-                                        <div className="col-md-4 order-0 order-md-1">
-                                            <img
-                                                src={data.image}
-                                                alt="..."
-                                                className="card-img-top"
-                                            />
-                                        </div>
                                     </div>
-                                </div>
+                                    <Accordion.Collapse eventKey="0">
+                                        <div className="swservice-row row">
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                                <div className="image-service">
+                                                    <a href="" target="_blank">
+                                                        Ecommerce
+                                                    </a>
+                                                    <img
+                                                        src="https://www.w3schools.com/css/img_chania.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Accordion.Collapse>
+                                </Accordion>
                             );
                         }
                     })}

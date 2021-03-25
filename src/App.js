@@ -57,7 +57,7 @@ function App() {
                     />
                 </Route>
 
-                <Redirect from="/" to="/home" exact />
+                {/* <Redirect from="/" to="/home" /> */}
 
                 <Footer />
             </div>
