@@ -19,11 +19,7 @@ function Footer({ logo }) {
                     <div className="col-12 col-md-7 col-lg-4">
                         <div className="footer-content">
                             <div className="footer-logo">
-                                <img
-                                    src={footerLogo}
-                                    alt=""
-                                    className="img-fluid"
-                                />
+                                <img src={logo} alt="" className="img-fluid" />
                             </div>
                             <div className="social-links">
                                 <a href="https://www.facebook.com/sochware/">

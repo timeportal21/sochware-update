@@ -3,6 +3,7 @@ import "./_about.scss";
 import aboutImage from "../../images/about_image.png";
 import { IoChevronForwardSharp } from "react-icons/io5";
 import listPoint from "../../images/bullet-point.svg";
+
 import Slider from "react-slick";
 
 function About({ heroColor, customButton }) {
@@ -150,7 +151,15 @@ function About({ heroColor, customButton }) {
                                     <div className="d-flex">
                                         {/* <img src={listPoint} alt="" className="mr-2" width="30" /> */}
                                         <li key={i}>
-                                            <p>{data.content}</p>
+                                            <div>
+                                                <img
+                                                    src={listPoint}
+                                                    alt=""
+                                                    className="mr-2"
+                                                    width="30"
+                                                />
+                                            </div>
+                                            <div>{data.content}</div>
                                         </li>
                                     </div>
                                 </>
@@ -172,7 +181,7 @@ function About({ heroColor, customButton }) {
                                 <div className="slider-content" key={i}>
                                     <div className="card mr-3">
                                         <div className="row no-gutters">
-                                            <div className="col-md-2">
+                                            <div className="col-md-3">
                                                 <img
                                                     src={data.image}
                                                     alt="..."

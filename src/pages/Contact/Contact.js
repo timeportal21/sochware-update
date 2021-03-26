@@ -207,7 +207,7 @@ function Contact({ heroColor }) {
                             <div className="slider-content" key={i}>
                                 <div className="card mb-3">
                                     <div className="row no-gutters">
-                                        <div className="col-md-2">
+                                        <div className="col-md-3">
                                             <img
                                                 src={data.image}
                                                 alt="..."

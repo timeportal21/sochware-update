@@ -116,8 +116,8 @@ function OurServices({ heroColor, customButton }) {
                                         </div>
                                     </div>
                                     <Accordion.Collapse eventKey="0">
-                                        <div className="swservice-row row">
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                        <div className="swservice-row row align-items-center">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -128,7 +128,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -139,7 +139,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -150,7 +150,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -161,7 +161,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -209,8 +209,8 @@ function OurServices({ heroColor, customButton }) {
                                         </div>
                                     </div>
                                     <Accordion.Collapse eventKey="0">
-                                        <div className="swservice-row row">
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                        <div className="swservice-row row align-items-center">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -221,7 +221,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -232,7 +232,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -243,7 +243,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce
@@ -254,7 +254,7 @@ function OurServices({ heroColor, customButton }) {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 col-lg-2 accordion-content">
+                                            <div className="accordion-content">
                                                 <div className="image-service">
                                                     <a href="" target="_blank">
                                                         Ecommerce

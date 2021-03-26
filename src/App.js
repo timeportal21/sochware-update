@@ -31,7 +31,7 @@ function App() {
                     logo={logo}
                 />
 
-                <Route path="/home" exact>
+                <Route path="/" exact>
                     <Home
                         heroColor={heroColor}
                         customButton={customButton}
@@ -57,9 +57,8 @@ function App() {
                     />
                 </Route>
 
-                {/* <Redirect from="/" to="/home" /> */}
-
-                <Footer />
+                <Footer logo={logo} />
+                {/* <Redirect from="/" to="/home" exact/> */}
             </div>
         </Fragment>
     );

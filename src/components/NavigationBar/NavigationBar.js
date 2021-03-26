@@ -15,9 +15,9 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav
                             className={`ml-auto ${lightClass}`}
-                            defaultActiveKey="/home"
+                            defaultActiveKey="/"
                         >
-                            <NavLink className="nav-link" to="/home">
+                            <NavLink className="nav-link" to="/">
                                 Home
                             </NavLink>
                             <NavLink className="nav-link" to="/career">
