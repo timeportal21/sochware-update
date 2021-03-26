@@ -27,20 +27,25 @@
 
 .why-sochware ul {
     list-style: none;
-    // list-style-image: url("../../images/bullet-point.svg");
+    list-style-image: url("../../images/bullet-point.svg");
     padding-left: 1em;
     li {
-        &:before {
-            content: "";
-            display: inline-block;
-            height: 1em;
-            width: 1em;
-            background-image: url("../../images/bullet-point.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding-left: 2em;
+        p {
+            position: absolute !important;
         }
     }
+    // li {
+    //     &:before {
+    //         content: "";
+    //         display: inline-block;
+    //         height: 1em;
+    //         width: 1em;
+    //         background-image: url("../../images/bullet-point.svg");
+    //         background-size: contain;
+    //         background-repeat: no-repeat;
+    //         padding-left: 2em;
+    //     }
+    // }
 }
 .team-slider {
     background-color: #4c4a68;
