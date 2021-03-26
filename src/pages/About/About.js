@@ -147,22 +147,19 @@ function About({ heroColor, customButton }) {
                     <div className="why-sochware">
                         <ul>
                             {whySochware.map((data, i) => (
-                                <>
-                                    <div className="d-flex">
-                                        {/* <img src={listPoint} alt="" className="mr-2" width="30" /> */}
-                                        <li key={i}>
-                                            <div>
-                                                <img
-                                                    src={listPoint}
-                                                    alt=""
-                                                    className="mr-2"
-                                                    width="30"
-                                                />
-                                            </div>
-                                            <div>{data.content}</div>
-                                        </li>
-                                    </div>
-                                </>
+                                <div className="d-flex" key={i}>
+                                    <li>
+                                        <div>
+                                            <img
+                                                src={listPoint}
+                                                alt=""
+                                                className="mr-2"
+                                                width="30"
+                                            />
+                                        </div>
+                                        <div>{data.content}</div>
+                                    </li>
+                                </div>
                             ))}
                         </ul>
                     </div>

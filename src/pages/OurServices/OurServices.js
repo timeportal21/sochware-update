@@ -76,8 +76,8 @@ function OurServices({ heroColor, customButton }) {
                     {ourServices.map((data, i) => {
                         if (i % 2 === 0) {
                             return (
-                                <Accordion>
-                                    <div className="card content-row" key={i}>
+                                <Accordion key={i}>
+                                    <div className="card content-row">
                                         <div className="row g-0">
                                             <div className="col-md-4">
                                                 <img
@@ -178,8 +178,8 @@ function OurServices({ heroColor, customButton }) {
                             );
                         } else {
                             return (
-                                <Accordion>
-                                    <div className="card content-row" key={i}>
+                                <Accordion key={i}>
+                                    <div className="card content-row">
                                         <div className="row g-0">
                                             <div className="col-md-8 order-1 order-md-0">
                                                 <div

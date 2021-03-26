@@ -17,7 +17,7 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                             className={`ml-auto ${lightClass}`}
                             defaultActiveKey="/"
                         >
-                            <NavLink className="nav-link" to="/">
+                            <NavLink className="nav-link" to="/" exact>
                                 Home
                             </NavLink>
                             <NavLink className="nav-link" to="/career">

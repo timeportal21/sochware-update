@@ -54,7 +54,10 @@ function Features({ heroColor, customButton, borderButton }) {
                 <div className="feature-content">
                     <div className="row">
                         {featureContent.map((data, i) => (
-                            <div className="col-12 col-xl-3 col-md-6 col-lg-4">
+                            <div
+                                className="col-12 col-xl-3 col-md-6 col-lg-4"
+                                key={i}
+                            >
                                 <div className="group-feature">
                                     <div className="group-image">
                                         <img

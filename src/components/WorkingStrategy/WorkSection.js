@@ -34,7 +34,10 @@ function WorkSection({ heroColor }) {
                 <div className="work-content">
                     <div className="row">
                         {workContent.map((data, i) => (
-                            <div className="col-xs-12 col-xl-3 col-md-6 col-lg-4">
+                            <div
+                                className="col-xs-12 col-xl-3 col-md-6 col-lg-4"
+                                key={i}
+                            >
                                 <div className="group-feature">
                                     <div className="group-image">
                                         <img
