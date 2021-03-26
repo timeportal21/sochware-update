@@ -9,7 +9,7 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
             <Navbar expand="lg">
                 <div className="container">
                     <Navbar.Brand href="/">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -39,7 +39,7 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                                 Contact
                             </NavLink>
                             <div className="animation start-home"></div>
-                            <Button onClick={toggleLight}>
+                            <Button onClick={toggleLight} className="toggle-button">
                                 <img src={mode} alt="toggle-light" />
                             </Button>
                         </Nav>
