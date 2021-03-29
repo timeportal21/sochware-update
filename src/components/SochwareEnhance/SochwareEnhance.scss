@@ -2,6 +2,15 @@
     padding-top: 128px;
     &.hero-light {
         background-color: #e1e3f5 !important;
+        .group-number {
+            background-color: #fff;
+        }
+    }
+    &.hero-dark {
+        background-color: #837fb1;
+        .group-number {
+            background-color: #4c4a68;
+        }
     }
 }
 
@@ -16,6 +25,7 @@
 
 .group-number {
     padding: 58px;
+    border-radius: 8px;
     margin-bottom: 36px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);

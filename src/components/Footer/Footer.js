@@ -7,13 +7,12 @@ import mailIcon from "../../images/Mail.svg";
 import dribbleIcon from "../../images/Dribbble.svg";
 import miniRocketIcon from "../../images/mini-rocket.svg";
 import footerImage from "../../images/Footer-Image.svg";
-import footerLogo from "../../images/sochware_final.png";
 
 import { Form, InputGroup } from "react-bootstrap";
 
-function Footer({ logo }) {
+function Footer({ logo, heroColor }) {
     return (
-        <section className="footer-section">
+        <section className={`footer-section ${heroColor}`}>
             <div className="container ">
                 <div className="row">
                     <div className="col-12 col-md-7 col-lg-4">

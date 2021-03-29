@@ -62,7 +62,7 @@ function App() {
                     />
                 </Route>
 
-                <Footer logo={logo} />
+                <Footer logo={logo} heroColor={heroColor} />
             </div>
         </Fragment>
     );

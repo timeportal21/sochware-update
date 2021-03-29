@@ -3,6 +3,11 @@ import "./_about.scss";
 import aboutImage from "../../images/about_image.png";
 import { IoChevronForwardSharp } from "react-icons/io5";
 import listPoint from "../../images/bullet-point.svg";
+import facebookIcon from "../../images/Facebook.svg";
+import twitterIcon from "../../images/Twitter.svg";
+import instagramIcon from "../../images/Insta.svg";
+import mailIcon from "../../images/Mail.svg";
+import dribbleIcon from "../../images/Dribbble.svg";
 
 import Slider from "react-slick";
 
@@ -79,29 +84,21 @@ function About({ heroColor, customButton, listImage }) {
             name: "John Doe",
             designation: "senior designer",
             image: aboutImage,
-            content:
-                "this is wider card with supporting text below as a natural lead",
         },
         {
             name: "Johnny Doe",
             designation: "junior designer",
             image: aboutImage,
-            content:
-                "this is wider card with supporting text below as a natural lead",
         },
         {
             name: "Jane Doe",
             designation: "intern designer",
             image: aboutImage,
-            content:
-                "this is wider card with supporting text below as a natural lead",
         },
         {
             name: "Jahn Doe",
             designation: "ex designer",
             image: aboutImage,
-            content:
-                "this is wider card with supporting text below as a natural lead",
         },
     ]);
 
@@ -144,25 +141,23 @@ function About({ heroColor, customButton, listImage }) {
                     <div className={`section-title`}>
                         <h1>Why Sochware ?</h1>
                     </div>
-                    <div className="why-sochware">
-                        <ul>
-                            {whySochware.map((data, i) => (
-                                <div className="d-flex" key={i}>
-                                    <li>
-                                        <div>
-                                            <img
-                                                src={listImage}
-                                                alt=""
-                                                className="mr-2"
-                                                width="30"
-                                            />
-                                        </div>
-                                        <div>{data.content}</div>
-                                    </li>
-                                </div>
-                            ))}
-                        </ul>
-                    </div>
+                    <ul>
+                        {whySochware.map((data, i) => (
+                            <div className="d-flex" key={i}>
+                                <li>
+                                    <div>
+                                        <img
+                                            src={listImage}
+                                            alt=""
+                                            className="mr-2 list-image"
+                                            width="30"
+                                        />
+                                    </div>
+                                    <div>{data.content}</div>
+                                </li>
+                            </div>
+                        ))}
+                    </ul>
                 </div>
             </div>
             <section>
@@ -171,7 +166,7 @@ function About({ heroColor, customButton, listImage }) {
                         <h1>Our Team</h1>
                     </div>
                 </div>
-                <div className="team-slider">
+                <div className={`team-slider ${heroColor}`}>
                     <div className="container">
                         <Slider {...settings}>
                             {ourTeam.map((data, i) => (
@@ -195,6 +190,46 @@ function About({ heroColor, customButton, listImage }) {
                                                             {data.designation}
                                                         </small>
                                                     </p>
+                                                    <div className="social-links d-flex">
+                                                        <a href="https://www.facebook.com/sochware/">
+                                                            <img
+                                                                src={
+                                                                    facebookIcon
+                                                                }
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <a href="https://www.instagram.com/sochware/?hl=en">
+                                                            <img
+                                                                src={
+                                                                    instagramIcon
+                                                                }
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <a href="mailto:mail@sochware.com">
+                                                            <img
+                                                                src={mailIcon}
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <a href="https://twitter.com/sochware?lang=en">
+                                                            <img
+                                                                src={
+                                                                    twitterIcon
+                                                                }
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <a href="https://www.facebook.com">
+                                                            <img
+                                                                src={
+                                                                    dribbleIcon
+                                                                }
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -213,10 +248,12 @@ function About({ heroColor, customButton, listImage }) {
                     <div className={`section-title ${heroColor} mt-5`}>
                         <h1>Our Partners</h1>
                     </div>
-                    <div className="partner-logo">
-                        {partners.map((data, i) => (
-                            <div className="partner-circle" key={i}></div>
-                        ))}
+                    <div className="container">
+                        <div className="partner-logo">
+                            {partners.map((data, i) => (
+                                <div className="partner-circle" key={i}></div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

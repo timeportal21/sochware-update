@@ -1,16 +1,19 @@
-.footer-section {   
+.footer-section {
     position: relative;
     padding-top: 100px;
     background-color: #343349;
     background-repeat: no-repeat;
     background-size: cover;
+
     .footer-logo img {
         width: 100% !important;
     }
     .footer-image {
-        background-color: #343349;
         position: absolute;
         bottom: 0;
+    }
+    &.hero-light {
+        background-color: #4d4953 !important;
     }
 }
 .footer-content {

@@ -42,12 +42,6 @@ function Features({ heroColor, customButton, borderButton }) {
                     >
                         Learn More
                     </Button>
-                    <Button
-                        className={`custom-button custom-btn-sm custom-btn-sm-border ${customButton} ${borderButton}`}
-                        size="sm"
-                    >
-                        View All
-                    </Button>
                 </div>
             </div>
             <div className="container">

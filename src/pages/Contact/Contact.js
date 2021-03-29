@@ -76,164 +76,177 @@ function Contact({ heroColor }) {
     };
     return (
         <div className="contact-section">
-            <div className="container">
-                <div className={`section-title ${heroColor}`}>
-                    <h1>Contact Us</h1>
-                </div>
-                <div className="contact-content">
-                    <div className="card w-100">
-                        <div className="card-body">
-                            <div className="row">
-                                <div className="col-xs-12 col-md-8">
-                                    <div className="contact-form">
-                                        <form action="">
-                                            <div className="row">
-                                                <div className="col-xs-12 col-md-6">
-                                                    <div className="form-group">
-                                                        <label htmlFor="">
-                                                            Name
-                                                        </label>
-                                                        <div className="input-group">
-                                                            <div className="input-group-prepend">
-                                                                <div className="input-group-text">
-                                                                    <AiOutlineUser />
+            <div className="contactus-section">
+                <div className="container">
+                    <div className={`section-title ${heroColor}`}>
+                        <h1>Contact Us</h1>
+                    </div>
+                    <div className="contact-content">
+                        <div className="card w-100">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col-xs-12 col-md-8">
+                                        <div className="contact-form">
+                                            <form action="">
+                                                <div className="row">
+                                                    <div className="col-xs-12 col-md-6">
+                                                        <div className="form-group">
+                                                            <label htmlFor="">
+                                                                Name
+                                                            </label>
+                                                            <div className="input-group">
+                                                                <div className="input-group-prepend">
+                                                                    <div className="input-group-text">
+                                                                        <AiOutlineUser />
+                                                                    </div>
                                                                 </div>
+                                                                <input
+                                                                    type="text"
+                                                                    className="form-control"
+                                                                    placeholder="First name"
+                                                                />
                                                             </div>
-                                                            <input
-                                                                type="text"
-                                                                className="form-control"
-                                                                placeholder="First name"
-                                                            />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="">
+                                                                Email
+                                                            </label>
+                                                            <div className="input-group">
+                                                                <div className="input-group-prepend">
+                                                                    <div className="input-group-text">
+                                                                        <BsEnvelopeOpen />
+                                                                    </div>
+                                                                </div>
+                                                                <input
+                                                                    type="email"
+                                                                    className="form-control"
+                                                                    placeholder="Email"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="">
+                                                                Phone
+                                                            </label>
+                                                            <div className="input-group">
+                                                                <div className="input-group-prepend">
+                                                                    <div className="input-group-text">
+                                                                        <AiOutlinePhone />
+                                                                    </div>
+                                                                </div>
+                                                                <input
+                                                                    type="text"
+                                                                    className="form-control"
+                                                                    placeholder="First name"
+                                                                />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="">
-                                                            Email
-                                                        </label>
-                                                        <div className="input-group">
-                                                            <div className="input-group-prepend">
-                                                                <div className="input-group-text">
-                                                                    <BsEnvelopeOpen />
-                                                                </div>
+                                                    <div className="col-xs-12 col-md-6">
+                                                        <div className="form-group">
+                                                            <label htmlFor="">
+                                                                Message
+                                                            </label>
+                                                            <div className="text-area-message">
+                                                                <textarea
+                                                                    name=""
+                                                                    id=""
+                                                                    cols="30"
+                                                                    rows="8"
+                                                                    className="form-control"
+                                                                ></textarea>
+                                                                <button
+                                                                    type="submit"
+                                                                    className="btn btn-md"
+                                                                >
+                                                                    <BsFillChatDotsFill />
+                                                                </button>
                                                             </div>
-                                                            <input
-                                                                type="email"
-                                                                className="form-control"
-                                                                placeholder="Email"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label htmlFor="">
-                                                            Phone
-                                                        </label>
-                                                        <div className="input-group">
-                                                            <div className="input-group-prepend">
-                                                                <div className="input-group-text">
-                                                                    <AiOutlinePhone />
-                                                                </div>
-                                                            </div>
-                                                            <input
-                                                                type="text"
-                                                                className="form-control"
-                                                                placeholder="First name"
-                                                            />
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="col-xs-12 col-md-6">
-                                                    <div className="form-group">
-                                                        <label htmlFor="">
-                                                            Message
-                                                        </label>
-                                                        <div className="text-area-message">
-                                                            <textarea
-                                                                name=""
-                                                                id=""
-                                                                cols="30"
-                                                                rows="8"
-                                                                className="form-control"
-                                                            ></textarea>
-                                                            <button type="submit" className="btn btn-md">
-                                                                <BsFillChatDotsFill />
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col-xs-12 col-md-4">
-                                    <label htmlFor="">Tags</label>
-                                    <div className="tags">
-                                        <button className="btn btn-outline-info">
-                                            UI/UX Design
-                                        </button>
-                                        <button className="btn btn-outline-secondary">
-                                            Share An Idea
-                                        </button>
-                                        <button className="btn btn-outline-secondary">
-                                            Feedback
-                                        </button>
-                                        <button className="btn btn-outline-secondary">
-                                            Client
-                                        </button>
-                                        <button className="btn btn-outline-secondary">
-                                            Student
-                                        </button>
-                                        <button className="btn btn-outline-secondary">
-                                            Complaint
-                                        </button>
-                                        <button className="btn btn-outline-success">
-                                            Job Application
-                                        </button>
-                                        <button className="btn btn-outline-secondary">
-                                            <AiOutlineEdit />
-                                            Custom
-                                        </button>
+                                    <div className="col-xs-12 col-md-4">
+                                        <label htmlFor="">Tags</label>
+                                        <div className="tags">
+                                            <button className="btn btn-outline-info">
+                                                UI/UX Design
+                                            </button>
+                                            <button className="btn btn-outline-secondary">
+                                                Share An Idea
+                                            </button>
+                                            <button className="btn btn-outline-secondary">
+                                                Feedback
+                                            </button>
+                                            <button className="btn btn-outline-secondary">
+                                                Client
+                                            </button>
+                                            <button className="btn btn-outline-secondary">
+                                                Student
+                                            </button>
+                                            <button className="btn btn-outline-secondary">
+                                                Complaint
+                                            </button>
+                                            <button className="btn btn-outline-success">
+                                                Job Application
+                                            </button>
+                                            <button className="btn btn-outline-secondary">
+                                                <AiOutlineEdit />
+                                                Custom
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className={`section-title ${heroColor} mt-5`}>
-                    <h1>Testimonials</h1>
+            </div>
+            <div className="testimonial-section">
+                <div className="testimonial-header">
+                    <div className="container">
+                        <div className={`section-title ${heroColor} mt-5`}>
+                            <h1>Testimonials</h1>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <Slider {...settings}>
-                        {testimonialContent.map((data, i) => (
-                            <div className="slider-content" key={i}>
-                                <div className="card mb-3">
-                                    <div className="row no-gutters">
-                                        <div className="col-md-3">
-                                            <img
-                                                src={data.image}
-                                                alt="..."
-                                                className="img-fluid"
-                                            />
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="card-body">
-                                                <h5 className="card-title">
-                                                    {data.name}
-                                                </h5>
-                                                <p className="card-text">
-                                                    <small className="text-muted">
-                                                        {data.designation}
-                                                    </small>
-                                                </p>
+                <div className="testimonial-content">
+                    <div className="container">
+                        <Slider {...settings}>
+                            {testimonialContent.map((data, i) => (
+                                <div className="slider-content" key={i}>
+                                    <div className="card mb-3">
+                                        <div className="row no-gutters">
+                                            <div className="col-md-3">
+                                                <img
+                                                    src={data.image}
+                                                    alt="..."
+                                                    className="img-fluid"
+                                                />
+                                            </div>
+                                            <div className="col-md-8">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">
+                                                        {data.name}
+                                                    </h5>
+                                                    <p className="card-text">
+                                                        <small className="text-muted">
+                                                            {data.designation}
+                                                        </small>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
+                                        <p className="container mt-5">
+                                            {data.content}
+                                        </p>
                                     </div>
-                                    <p className="container mt-5">
-                                        {data.content}
-                                    </p>
                                 </div>
-                            </div>
-                        ))}
-                    </Slider>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import light_logo from "../images/sochware_final.png";
 import dark_logo from "../images/sochware_final_dark.png";
 import sun from "../images/Sun.svg";
 import night from "../images/Moon.svg";
-import listImageLight from "../images/bullet-point-light.svg";
+import listImageLight from "../images/bullet-point.svg";
 import listImageDark from "../images/bullet-point-light.svg";
 
 export const LightContext = createContext();

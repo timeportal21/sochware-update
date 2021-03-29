@@ -1,6 +1,5 @@
 .contact-section {
     padding-top: 50px;
-    padding-bottom: 18rem;
 }
 .contact-form {
     .input-group-text {
@@ -59,6 +58,15 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+}
+.testimonial-section {
+    margin-top: 10rem;
+    .testimonial-content {
+        background-color: #4c4a68;
+        .slick-dots {
+            position: unset !important;
+        }
     }
 }
 
