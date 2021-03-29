@@ -12,12 +12,12 @@ function HeroSection({ heroColor, customButton }) {
                     <div className="col-12 col-lg-5">
                         <div className={`hero-info ${heroColor} ml-0`}>
                             <h1 className="h1">
-                                The solution to your tech problems is just a
-                                contact away
+                                Experience based solution to your tech problems
+                                is just a contact away
                             </h1>
                             <p>
-                                We’re here to provide you with the best there is
-                                to offer.
+                                Team of experts with versatile background at
+                                your service
                             </p>
                             <Button
                                 className={`custom-button custom-btn-lg ${customButton}`}

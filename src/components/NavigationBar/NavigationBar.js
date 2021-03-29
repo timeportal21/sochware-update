@@ -39,7 +39,10 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                                 Contact
                             </NavLink>
                             <div className="animation start-home"></div>
-                            <Button onClick={toggleLight} className="toggle-button">
+                            <Button
+                                onClick={toggleLight}
+                                className="toggle-button"
+                            >
                                 <img src={mode} alt="toggle-light" />
                             </Button>
                         </Nav>

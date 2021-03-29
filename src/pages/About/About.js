@@ -6,7 +6,7 @@ import listPoint from "../../images/bullet-point.svg";
 
 import Slider from "react-slick";
 
-function About({ heroColor, customButton }) {
+function About({ heroColor, customButton, listImage }) {
     const settings = {
         dots: true,
         infinite: true,
@@ -151,7 +151,7 @@ function About({ heroColor, customButton }) {
                                     <li>
                                         <div>
                                             <img
-                                                src={listPoint}
+                                                src={listImage}
                                                 alt=""
                                                 className="mr-2"
                                                 width="30"

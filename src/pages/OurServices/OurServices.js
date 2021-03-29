@@ -41,10 +41,10 @@ function ContextAwareToggle({ children, eventKey, callback, customButton }) {
 function OurServices({ heroColor, customButton }) {
     const [ourServices, setOurServices] = useState([
         {
-            title: "Hardware",
+            title: "Training",
             content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            image: cpuImage,
+            image: trainingImage,
         },
         {
             title: "Software",
@@ -53,10 +53,10 @@ function OurServices({ heroColor, customButton }) {
             image: softwareImage,
         },
         {
-            title: "Training",
+            title: "Hardware",
             content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            image: trainingImage,
+            image: cpuImage,
         },
         {
             title: "Community",

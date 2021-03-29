@@ -3,6 +3,8 @@ import light_logo from "../images/sochware_final.png";
 import dark_logo from "../images/sochware_final_dark.png";
 import sun from "../images/Sun.svg";
 import night from "../images/Moon.svg";
+import listImageLight from "../images/bullet-point-light.svg";
+import listImageDark from "../images/bullet-point-light.svg";
 
 export const LightContext = createContext();
 
@@ -17,6 +19,7 @@ const LightToggleProvider = (props) => {
             heroColor: "hero-dark",
             customButton: "dark-btn",
             borderButton: "custom-btn-sm-border-dark",
+            listImage: listImageDark,
         },
         light: {
             bg: "root-light",
@@ -26,6 +29,7 @@ const LightToggleProvider = (props) => {
             heroColor: "hero-light",
             customButton: "light-btn",
             borderButton: "custom-btn-sm-border-light",
+            listImage: listImageLight,
         },
     });
     const toggleLight = () => {

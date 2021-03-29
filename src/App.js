@@ -1,6 +1,6 @@
 import { Fragment, useContext } from "react";
 import "./App.scss";
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import { LightContext } from "./context/LightToggleContext";
 import Footer from "./components/Footer/Footer";
@@ -20,6 +20,7 @@ function App() {
         heroColor,
         customButton,
         borderButton,
+        listImage,
     } = isDark ? dark : light;
     return (
         <Fragment>
@@ -31,13 +32,6 @@ function App() {
                     logo={logo}
                 />
 
-                <Route path="/">
-                    <Home
-                        heroColor={heroColor}
-                        customButton={customButton}
-                        borderButton={borderButton}
-                    />
-                </Route>
                 <Route path="/career" exact>
                     <Career heroColor={heroColor} customButton={customButton} />
                 </Route>
@@ -48,12 +42,23 @@ function App() {
                     />
                 </Route>
                 <Route path="/about" exact>
-                    <About heroColor={heroColor} customButton={customButton} />
+                    <About
+                        heroColor={heroColor}
+                        customButton={customButton}
+                        listImage={listImage}
+                    />
                 </Route>
                 <Route path="/contact" exact>
                     <Contact
                         heroColor={heroColor}
                         customButton={customButton}
+                    />
+                </Route>
+                <Route path="/" exact>
+                    <Home
+                        heroColor={heroColor}
+                        customButton={customButton}
+                        borderButton={borderButton}
                     />
                 </Route>
 

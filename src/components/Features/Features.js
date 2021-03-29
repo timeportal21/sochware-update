@@ -6,28 +6,28 @@ import fastDamaro from "../../images/Group5.svg";
 function Features({ heroColor, customButton, borderButton }) {
     const [featureContent, setFeatureContent] = useState([
         {
-            title: "Fast",
+            title: "Agile",
             image: fastDamaro,
             detail:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "We work with agility to make sure the development process is flexible to fit the adaptive environment.",
         },
         {
             title: "Efficient",
             image: fastDamaro,
             detail:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "We make sure to develiver what we have promised for with no compromise to  efficiency.",
         },
         {
             title: "Professional",
             image: fastDamaro,
             detail:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "We together make team of experts with experience over 7 years in the field to cater you with professional service.",
         },
         {
-            title: "Experience",
+            title: "Empirical",
             image: fastDamaro,
             detail:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "Holding experience of working together with 25+ clients, we assure you experience based service.",
         },
     ]);
 

@@ -24,6 +24,12 @@
     text-align: center;
     margin-bottom: 20px;
 }
+.number-icon:hover {
+    img {
+        transition: 1s;
+        transform: rotate(360deg);
+    }
+}
 
 .number-show {
     text-align: center;
