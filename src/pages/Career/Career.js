@@ -36,7 +36,7 @@ function ContextAwareToggle({ children, eventKey, callback, buttonColor }) {
     );
 }
 
-function Career({ heroColor }) {
+function Career({ heroColor, customButton }) {
     const [jobDescription, setJobDescription] = useState([
         {
             id: 1,
@@ -75,6 +75,14 @@ function Career({ heroColor }) {
     const handleShow = (e) => {
         setToggleModal(true);
         setModalData(e);
+    };
+
+    const handleChange = (e) => {
+        console.log(e.target);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
     };
 
     return (
@@ -123,7 +131,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right"
+                                                                className={`custom-button float-right ${customButton} `}
                                                                 data-toggle="modal"
                                                                 data-target="#exampleModal"
                                                                 onClick={(e) =>
@@ -156,7 +164,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right disabled"
+                                                                className={`custom-button float-right ${customButton} disabled`}
                                                             >
                                                                 Hired
                                                             </button>
@@ -199,7 +207,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right"
+                                                                className={`custom-button float-right ${customButton} `}
                                                                 onClick={(e) =>
                                                                     handleShow(
                                                                         data
@@ -230,7 +238,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right disabled"
+                                                                className={`custom-button float-right ${customButton} disabled`}
                                                             >
                                                                 Hired
                                                             </button>
@@ -273,7 +281,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right"
+                                                                className={`custom-button float-right ${customButton} `}
                                                                 onClick={(e) =>
                                                                     handleShow(
                                                                         data
@@ -304,7 +312,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right disabled"
+                                                                className={`custom-button float-right ${customButton} disabled`}
                                                             >
                                                                 Hired
                                                             </button>
@@ -347,7 +355,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right"
+                                                                className={`custom-button float-right ${customButton} `}
                                                                 onClick={(e) =>
                                                                     handleShow(
                                                                         data
@@ -378,7 +386,7 @@ function Career({ heroColor }) {
                                                         <Card.Footer>
                                                             <button
                                                                 type="button"
-                                                                className="btn btn-primary float-right disabled"
+                                                                className={`custom-button float-right ${customButton} disabled`}
                                                             >
                                                                 Hired
                                                             </button>
@@ -403,7 +411,7 @@ function Career({ heroColor }) {
                             <div className="notified-form">
                                 <p>Enter Your Email</p>
                                 <form
-                                    action=""
+                                    onSubmit={handleSubmit}
                                     method="post"
                                     className="form-inline justify-content-center"
                                 >
@@ -415,6 +423,7 @@ function Career({ heroColor }) {
                                         </div>
                                         <input
                                             type="email"
+                                            onChange={handleChange}
                                             name="email"
                                             className="form-control"
                                         />

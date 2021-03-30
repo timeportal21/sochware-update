@@ -1,9 +1,18 @@
 .working-section {
     padding: 100px;
     &.hero-light {
-        background-color: #e1e3f5;
+        background-color: #f6faff;
         .group-feature {
             background-color: #fff;
+        }
+    }
+    &.hero-dark {
+        background-color: #152e52;
+        .group-feature {
+            background-color: #fff;
+            p {
+                color: #000;
+            }
         }
     }
 }
@@ -16,6 +25,7 @@
 .work-content {
     padding-top: 2vw;
     .group-feature {
+        border-radius: 12px;
         min-height: 330px;
         .group-image {
             margin-bottom: 22px;

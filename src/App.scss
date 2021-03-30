@@ -1,7 +1,7 @@
 .root-dark {
-    background-color: #3f3d56;
+    background-color: #071e40;
     .card {
-        background-color: #4c4a68;
+        background-color: #071e40;
         color: #fff;
     }
     .tags {
@@ -47,14 +47,18 @@
 }
 
 .dark-btn {
-    background-color: #fff !important;
-    border-color: #fff !important;
+    background-color: #ffc000 !important;
+    border-color: #ffc000 !important;
     color: #000 !important;
+    &.disabled {
+        color: #000 !important;
+        background-color: #846507 !important;
+    }
 }
 
 .light-btn {
-    background-color: #174587 !important;
-    border-color: #174587 !important;
+    background-color: #071e40 !important;
+    border-color: #071e40 !important;
     color: #fff !important;
 }
 

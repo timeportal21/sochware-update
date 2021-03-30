@@ -1,16 +1,16 @@
 .enhance-section {
     padding-top: 128px;
     &.hero-light {
-        background-color: #e1e3f5 !important;
+        background-color: #f6faff !important;
         .group-number {
             background-color: #fff;
         }
     }
     &.hero-dark {
-        background-color: #837fb1;
-        .group-number {
-            background-color: #4c4a68;
-        }
+        background-color: #152e52;
+        // .group-number {
+        //     background-color: #4c4a68;
+        // }
     }
 }
 

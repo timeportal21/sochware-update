@@ -87,7 +87,7 @@ header {
 }
 .navbar-brand {
     img {
-        width: 144px;
+        width: 320px;
     }
 }
 
@@ -109,10 +109,10 @@ header {
     .nav-link.active {
         border-radius: 6px;
         color: #000 !important;
-        background-color: #fff !important;
+        background-color: #ffc000 !important;
     }
     .animation {
-        background: #fff;
+        background: #ffc000;
     }
 }
 
@@ -126,10 +126,10 @@ header {
     .nav-link.active {
         border-radius: 6px;
         color: #fafbfc !important;
-        background-color: #174587 !important;
+        background-color: #071e40 !important;
     }
     .animation {
-        background: #174587;
+        background: #071e40;
     }
 }
 

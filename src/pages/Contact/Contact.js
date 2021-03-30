@@ -212,7 +212,7 @@ function Contact({ heroColor }) {
                         </div>
                     </div>
                 </div>
-                <div className="testimonial-content">
+                <div className={`testimonial-content ${heroColor}`}>
                     <div className="container">
                         <Slider {...settings}>
                             {testimonialContent.map((data, i) => (

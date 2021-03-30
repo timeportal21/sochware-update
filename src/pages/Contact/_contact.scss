@@ -60,10 +60,19 @@
         right: 0;
     }
 }
+
 .testimonial-section {
     margin-top: 10rem;
     .testimonial-content {
-        background-color: #4c4a68;
+        &.hero-light {
+            background-color: #ebf0f5;
+            .slick-dots li button:before {
+                background: #071e40 !important;
+            }
+        }
+        &.hero-dark {
+            background-color: #4c4a68;
+        }
         .slick-dots {
             position: unset !important;
         }
