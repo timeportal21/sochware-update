@@ -21,18 +21,14 @@ function ContextAwareToggle({ children, eventKey, callback, buttonColor }) {
     const isCurrentEventKey = currentEventKey === eventKey;
 
     return (
-        <button
-            type="button"
-            className={`btn btn-secondary ${buttonColor}`}
-            onClick={decoratedOnClick}
-        >
+        <a onClick={decoratedOnClick}>
             {!isCurrentEventKey ? (
                 <MdKeyboardArrowRight />
             ) : (
                 <MdKeyboardArrowDown />
             )}
             {children}
-        </button>
+        </a>
     );
 }
 

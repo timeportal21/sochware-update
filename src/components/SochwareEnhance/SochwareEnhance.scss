@@ -8,9 +8,12 @@
     }
     &.hero-dark {
         background-color: #152e52;
-        // .group-number {
-        //     background-color: #4c4a68;
-        // }
+        .group-number {
+            background-color: #fff;
+            p {
+                color: #000;
+            }
+        }
     }
 }
 

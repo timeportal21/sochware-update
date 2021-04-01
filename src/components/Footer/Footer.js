@@ -9,6 +9,7 @@ import miniRocketIcon from "../../images/mini-rocket.svg";
 import footerImage from "../../images/Footer-Image.svg";
 
 import { Form, InputGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Footer({ logo, heroColor }) {
     return (
@@ -20,6 +21,12 @@ function Footer({ logo, heroColor }) {
                             <div className="footer-logo">
                                 <img src={logo} alt="" className="img-fluid" />
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12 col-md-3">
+                        <div className="footer-content">
                             <div className="social-links">
                                 <a href="https://www.facebook.com/sochware/">
                                     <img src={facebookIcon} alt="" />
@@ -59,23 +66,57 @@ function Footer({ logo, heroColor }) {
                                     </div>
                                 </form>
                             </div>
-                            <div className="copyright">
-                                <p>
-                                    Copyright &copy; Sochware. All Right
-                                    Reserved
-                                </p>
-                            </div>
                         </div>
+                    </div>
+                    <div className="col-12 col-md-3">
+                        <h2>Website</h2>
+                        <ul>
+                            <li>
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">What we do</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                            <li>
+                                <Link to="/service">Services</Link>
+                            </li>
+                            <li>
+                                <Link to="/career">Career</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-12 col-md-3">
+                        <h2>Website</h2>
+                        <ul>
+                            <li>
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">What we do</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                            <li>
+                                <Link to="/service">Services</Link>
+                            </li>
+                            <li>
+                                <Link to="/career">Career</Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <img
-                src={footerImage}
-                alt=""
-                className="img-fluid footer-image w-100"
-            />
+            <div className="copyright text-center">
+                <p>Copyright &copy; Sochware. All Right Reserved</p>
+            </div>
         </section>
     );
 }
 
 export default Footer;
+
+// const qrSvg = 
