@@ -6,11 +6,10 @@ import instagramIcon from "../../images/Insta.svg";
 import mailIcon from "../../images/Mail.svg";
 import dribbleIcon from "../../images/Dribbble.svg";
 import miniRocketIcon from "../../images/mini-rocket.svg";
-import footerImage from "../../images/Footer-Image.svg";
-
 import { Form, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import footerLogo from "../../images/sochwarelogo.png";
 
 function Footer({ logo, heroColor }) {
     return (
@@ -20,7 +19,11 @@ function Footer({ logo, heroColor }) {
                     <div className="col-12 col-md-7 col-lg-4">
                         <div className="footer-content">
                             <div className="footer-logo">
-                                <img src={logo} alt="" className="img-fluid" />
+                                <img
+                                    src={footerLogo}
+                                    alt=""
+                                    className="img-fluid"
+                                />
                             </div>
                         </div>
                     </div>
@@ -69,7 +72,7 @@ function Footer({ logo, heroColor }) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-3 footer-link text-center">
+                    <div className="col-12 col-md-3 footer-link text-white text-center">
                         <h2>Website</h2>
                         <ul>
                             <li>
@@ -89,7 +92,7 @@ function Footer({ logo, heroColor }) {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-12 col-md-3 footer-link text-center ">
+                    <div className="col-12 col-md-3 footer-link text-white text-center ">
                         <h2>Connect With us</h2>
                         <ul>
                             <li>
@@ -112,7 +115,7 @@ function Footer({ logo, heroColor }) {
                     <div className="col-12 col-md-3 text-center">{qrSvg}</div>
                 </div>
             </div>
-            <div className="copyright text-center">
+            <div className="copyright text-center text-white">
                 <p>Copyright &copy; Sochware. All Right Reserved</p>
             </div>
         </section>
@@ -121,11 +124,8 @@ function Footer({ logo, heroColor }) {
 
 export default Footer;
 
-
-
 const qrSvg = (
     <svg
-       
         width="200"
         height="200"
         viewBox="0 0 252 275"
@@ -1435,11 +1435,7 @@ const qrSvg = (
             />
         </g>
 
-        <motion.path
-            d="M89.5 2H2V75.5"
-            stroke="#FFC000"
-            strokeWidth="4"
-        />
+        <motion.path d="M89.5 2H2V75.5" stroke="#FFC000" strokeWidth="4" />
         <path
             d="M162 272.5L249.5 272.5L249.5 199"
             stroke="#FFC000"

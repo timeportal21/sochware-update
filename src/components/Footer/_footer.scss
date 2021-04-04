@@ -1,7 +1,6 @@
 .footer-section {
     position: relative;
-    margin-top: 30vh;
-    // background-color: #343349;
+    padding-top: 30vh;
     background-color: #071e40;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +13,7 @@
         bottom: 0;
     }
     &.hero-light {
-        background-color: #4d4953 !important;
+        background-color: #071e40;
     }
 
     .footer-link {

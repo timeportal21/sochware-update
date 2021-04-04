@@ -29,7 +29,7 @@ function WorkSection({ heroColor }) {
         <section className={`working-section ${heroColor}`}>
             <div className="working-title text-center">
                 <h1>HOW WE WORK</h1>
-            </div>
+            </div>  
             <div className="container">
                 <div className="work-content">
                     <div className="row">
@@ -42,7 +42,7 @@ function WorkSection({ heroColor }) {
                                     <div className="group-image">
                                         {data.icon}
                                     </div>
-                                    <div className={`group-title ${heroColor}`}>
+                                    <div className={`work-title ${heroColor}`}>
                                         <p>{data.content}</p>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@ const developSvg = (
         initial="initial"
         animate="final"
         width="64"
-        height="40 "
+        height="62"
     >
         <motion.path
             variants={childVariants}
@@ -148,8 +148,8 @@ const qualitySvg = (
         variants={parentVariants}
         initial="initial"
         animate="final"
-        width="51"
-        height="50"
+        width="64"
+        height="62"
     >
         <motion.path
             variants={childVariants}
@@ -178,8 +178,8 @@ const coffeeSvg = (
         initial="initial"
         animate="final"
         width="60"
-        height="47"
-        viewBox="0 0 60 47"
+        height="62"
+        viewBox="0 0 60 62"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >

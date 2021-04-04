@@ -19,9 +19,9 @@
         }
     }
 }
-.aboutus-section {
-    margin-bottom: 7em;
-}
+// .aboutus-section {
+//     margin-bottom: 7em;
+// }
 
 .why-sochware {
     ul {
@@ -50,7 +50,7 @@
             }
         }
         .text-muted {
-            color: #d4dfe8 !important;
+            color: #fff !important;
         }
     }
     .card {
@@ -61,8 +61,16 @@
     }
     &.hero-light {
         background-color: #f6faff;
+        .text-muted {
+            color: #071e40 !important;
+        }
         .slick-dots li button:before {
             background: #2836a0 !important;
+        }
+        .social-links {
+            a {
+                color: #071e40 !important;
+            }
         }
     }
     .social-links {
@@ -73,7 +81,7 @@
     }
 }
 .partners {
-    margin: 12em 0 12em 0;
+    margin: 7em 0 7em 0;
 }
 .partner-logo {
     display: flex;
