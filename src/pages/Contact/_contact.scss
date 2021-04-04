@@ -3,7 +3,7 @@
 }
 .contact-form {
     .input-group-text {
-        background-color: #4c4a68;
+        background-color: #152e52;
     }
     svg {
         color: #fff;
@@ -67,11 +67,11 @@
         &.hero-light {
             background-color: #ebf0f5;
             .slick-dots li button:before {
-                background: #071e40 !important;
+                background: #152e52 !important;
             }
         }
         &.hero-dark {
-            background-color: #4c4a68;
+            background-color: #152e52;
         }
         .slick-dots {
             position: unset !important;

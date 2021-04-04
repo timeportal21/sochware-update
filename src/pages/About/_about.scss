@@ -1,6 +1,5 @@
 .about-section {
     margin-top: 44px;
-    padding-bottom: 16px;
     .card {
         background-color: transparent !important;
         border: none !important;
@@ -79,9 +78,10 @@
 .partner-logo {
     display: flex;
     width: 100%;
+    padding: 80px;
     position: relative;
     flex-flow: row wrap;
-    padding-left: 10%;
+    // padding-left: 10%;
     justify-content: space-around;
     .partner-circle {
         width: 100px;
