@@ -116,7 +116,9 @@ function Footer({ logo, heroColor }) {
                 </div>
             </div>
             <div className="copyright text-center text-white">
-                <p>Copyright &copy; Sochware. All Right Reserved</p>
+                <p className="mb-0">
+                    Copyright &copy; Sochware. All Right Reserved
+                </p>
             </div>
         </section>
     );
