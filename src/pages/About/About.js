@@ -114,6 +114,9 @@ function About({ heroColor, customButton, listImage }) {
             name: "Shishir Shrestha",
             designation: "COO",
             image: shishir,
+            facebook: "https://www.facebook.com/link2shishir",
+            linkedin: "https://www.linkedin.com/in/link2shishir/",
+            twitter: "https://twitter.com/link2shishir",
         },
         {
             name: "Saurav Shrestha",
@@ -124,31 +127,43 @@ function About({ heroColor, customButton, listImage }) {
             name: "Rabin Shrestha",
             designation: "Tech Lead",
             image: rabin,
+            facebook: "https://www.facebook.com/shrestha21",
+            linkedin: "https://www.linkedin.com/in/rabin-shrestha-272991186/",
         },
         {
             name: "Dharaatee Shree Shrestha",
             designation: "Project Lead",
             image: dharaateeshree,
+            linkedin: "https://www.linkedin.com/in/dharaatee/",
         },
         {
             name: "Susan Shrestha",
             designation: "WordPress Developer",
             image: susan,
+            facebook: "https://www.facebook.com/susansrth/",
+            linkedin: "https://www.linkedin.com/in/susan-shrestha-739580154/",
+            instagram: "https://www.instagram.com/shrestha_d_sushant/",
+            twitter: "https://twitter.com/Shr10Susan",
         },
         {
             name: "Sanjay Limbu",
             designation: "WordPress Developer",
             image: sanjay,
+            facebook: "https://www.facebook.com/sanjeev.limboo.3",
+            linkedin: "https://www.linkedin.com/in/sanjay-subba-aa833917a/",
         },
         {
             name: "Gautam Chaudhary ",
             designation: "ReactJs Intern",
             image: gautam,
+            facebook: "https://www.facebook.com/gautam.chaudhary.1800",
+            linkedin: "https://www.linkedin.com/in/gautam-chaudhary-007/",
         },
         {
             name: "Anil Tiruwa",
             designation: "IoT Intern",
             image: anil,
+            facebook: "https://www.facebook.com/anil.tiruwa.399",
         },
         // {
         //     name: "Aarati Shah",
@@ -251,21 +266,49 @@ function About({ heroColor, customButton, listImage }) {
                                                         </small>
                                                     </p>
                                                     <div className="social-links d-flex">
-                                                        <a href="https://www.facebook.com/sochware/">
-                                                            <FaFacebookSquare />
-                                                        </a>
-                                                        <a href="https://www.instagram.com/sochware/?hl=en">
-                                                            <FaInstagram />
-                                                        </a>
-                                                        <a href="mailto:mail@sochware.com">
-                                                            <FaEnvelope />
-                                                        </a>
-                                                        <a href="https://twitter.com/sochware?lang=en">
-                                                            <FaTwitter />
-                                                        </a>
-                                                        <a href="https://twitter.com/sochware?lang=en">
-                                                            <FaLinkedin />
-                                                        </a>
+                                                        {data.facebook ? (
+                                                            <a
+                                                                href={
+                                                                    data.facebook
+                                                                }
+                                                            >
+                                                                <FaFacebookSquare />
+                                                            </a>
+                                                        ) : null}
+                                                        {data.instagram ? (
+                                                            <a
+                                                                href={
+                                                                    data.instagram
+                                                                }
+                                                            >
+                                                                <FaInstagram />
+                                                            </a>
+                                                        ) : null}
+
+                                                        {data.mail ? (
+                                                            <a href={data.mail}>
+                                                                <FaEnvelope />
+                                                            </a>
+                                                        ) : null}
+                                                        {data.twitter ? (
+                                                            <a
+                                                                href={
+                                                                    data.twitter
+                                                                }
+                                                            >
+                                                                <FaTwitter />
+                                                            </a>
+                                                        ) : null}
+
+                                                        {data.linkedin ? (
+                                                            <a
+                                                                href={
+                                                                    data.linkedin
+                                                                }
+                                                            >
+                                                                <FaLinkedin />
+                                                            </a>
+                                                        ) : null}
                                                     </div>
                                                 </div>
                                             </div>

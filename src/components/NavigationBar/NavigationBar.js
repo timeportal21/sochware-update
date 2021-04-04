@@ -6,12 +6,12 @@ import { NavLink } from "react-router-dom";
 export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
     return (
         <header>
-            <Navbar expand="lg">
+            <Navbar expand="lg" className={`${lightClass}`}>
                 <div className="container">
                     <Navbar.Brand href="/">
                         <img src={logo} alt="logo" />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls={`basic-navbar-nav`} />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav
                             className={`ml-auto ${lightClass}`}
