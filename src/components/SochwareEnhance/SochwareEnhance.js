@@ -1,12 +1,5 @@
 import React, { useState } from "react";
 import "./SochwareEnhance.scss";
-import medalIcon from "../../images/award.svg";
-import eventIcon from "../../images/events.svg";
-import clientIcon from "../../images/clients.svg";
-import staffIcon from "../../images/staff.svg";
-import loremIcon from "../../images/lorem_orange.svg";
-import ipsumIcon from "../../images/Ipsum.svg";
-import trainingIcon from "../../images/training.svg";
 import AnimatedNumber from "react-animated-number";
 import { motion } from "framer-motion";
 

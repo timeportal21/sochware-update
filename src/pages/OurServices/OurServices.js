@@ -43,25 +43,25 @@ function OurServices({ heroColor, customButton }) {
         {
             title: "Training",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "IT Industry of Nepal is in urge of skilled technical manpower that can create technology to solve world issues. To produce these set of international standard tech-experts, SochWare aims to create industry based trainings for fresh minds in-collaboration with IT educational institutions. From Initial days of establishment we have had oppertunity to impact young innovative minds through our training programs in IoT, Cloud, Software Development Practices, Hour of Code(HOC), etc.",
             image: trainingImage,
         },
         {
             title: "Software",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "We aim to create a user-centric soft-solution that not only serves as a digital tool but also as the key to foster development. With best industrial practice and international standardization, we follow the process-based methodology that can meet the high-quality benchmark. Catering the team of experts in respective fields, we provide eagle-eyes to your digital needs.",
             image: softwareImage,
         },
         {
             title: "Hardware",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "Sochware is not just another IT company that develops software. we also focus to create futuristic solutions that supports the vision of digitally enabled Nepal. for the same, we also design, develop and provide hardware solutions to support your software backgrounds. with engineers who have spectral knowledge in the field, we assure you quality of service, unique to of our own kind.",
             image: cpuImage,
         },
         {
             title: "Community",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod tempor tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                "we believe in empowering nation with digital expertise be it a tech expert or general public. From farmer to educator, we aim to touch life of each citizen to enable them for futuristic generation. To serve as enabler, developer and implementor of technology, we have been reaching-out to communities to train them for technology use. We also believe each individual needs to understand how technology works to survive in digital era. Hence we have been providing an hour of code as part of community out-reach program.",
             image: communityImage,
         },
     ]);

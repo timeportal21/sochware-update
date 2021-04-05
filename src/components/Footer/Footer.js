@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./_footer.scss";
 import facebookIcon from "../../images/Facebook.svg";
 import twitterIcon from "../../images/Twitter.svg";
@@ -12,16 +12,17 @@ import { motion } from "framer-motion";
 import footerLogo from "../../images/sochwarelogo.png";
 
 function Footer({ logo, heroColor }) {
-    const handleTopButton = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+    // const handleTopButton = () => {
+    //     window.scrollTo({ top: 0, behavior: "smooth" });
+    // };
+
     return (
         <section className={`footer-section ${heroColor}`}>
-            <div className="goto-top">
+            {/* <div className="goto-top">
                 <button className="btn" onClick={handleTopButton}>
                     {scrollToTopSvg}
                 </button>
-            </div>
+            </div> */}
             <div className="container ">
                 <div className="row">
                     <div className="col-12 col-md-7 col-lg-4">
