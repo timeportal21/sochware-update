@@ -9,6 +9,8 @@ import OurServices from "./pages/OurServices/OurServices";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Career from "./pages/Career/Career";
+import Blog from "./pages/Blog/Blog";
+import Event from "./pages/Event/Event";
 
 function App() {
     const { isDark, dark, light, toggleLight } = useContext(LightContext);
@@ -32,13 +34,24 @@ function App() {
                     logo={logo}
                 />
 
-                <Route path="/career" exact>
-                    <Career heroColor={heroColor} customButton={customButton} />
-                </Route>
                 <Route path="/services" exact>
                     <OurServices
                         heroColor={heroColor}
                         customButton={customButton}
+                    />
+                </Route>
+                <Route path="/blogs" exact>
+                    <Blog
+                        heroColor={heroColor}
+                        customButton={customButton}
+                        listImage={listImage}
+                    />
+                </Route>
+                <Route path="/events" exact>
+                    <Event
+                        heroColor={heroColor}
+                        customButton={customButton}
+                        listImage={listImage}
                     />
                 </Route>
                 <Route path="/about" exact>
@@ -53,6 +66,9 @@ function App() {
                         heroColor={heroColor}
                         customButton={customButton}
                     />
+                </Route>
+                <Route path="/career" exact>
+                    <Career heroColor={heroColor} customButton={customButton} />
                 </Route>
                 <Route path="/" exact>
                     <Home

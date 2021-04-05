@@ -20,13 +20,10 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                             <NavLink className="nav-link" to="/" exact>
                                 Home
                             </NavLink>
-                            <NavLink className="nav-link" to="/career">
-                                Career
-                            </NavLink>
                             <NavLink className="nav-link" to="/services">
                                 Service
                             </NavLink>
-                            <NavLink className="nav-link" to="/blog">
+                            <NavLink className="nav-link" to="/blogs">
                                 Blog
                             </NavLink>
                             <NavLink className="nav-link" to="/events">
@@ -37,6 +34,9 @@ export default function NavigationBar({ toggleLight, lightClass, logo, mode }) {
                             </NavLink>
                             <NavLink className="nav-link" to="/contact">
                                 Contact
+                            </NavLink>
+                            <NavLink className="nav-link" to="/career">
+                                Career
                             </NavLink>
                             <div className="animation start-home"></div>
                             <Button

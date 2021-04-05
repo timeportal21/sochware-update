@@ -12,5 +12,8 @@
             border: #e1e3f5;
             margin-right: 2em;
         }
+        input[type="file"] {
+            display: none;
+        }
     }
 }

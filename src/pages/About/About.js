@@ -202,7 +202,7 @@ function About({ heroColor, customButton, listImage }) {
                     <div className={`section-title ${heroColor}`}>
                         <h1>About Us</h1>
                     </div>
-                    <div className="about-content">
+                    <div className={`about-content ${heroColor}`}>
                         {aboutContent.map((data, i) => (
                             <div className="card" key={i}>
                                 <div className="card-body">

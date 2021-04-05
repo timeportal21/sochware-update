@@ -2,8 +2,9 @@ import React from "react";
 import "./_custom_modal.scss";
 import { Button } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
-function CustomModal({ modalData, toggleModal, handleClose }) {
+function CustomModal({ modalData, toggleModal, handleClose, customButton }) {
     return (
         <Modal
             size="lg"
@@ -32,12 +33,44 @@ function CustomModal({ modalData, toggleModal, handleClose }) {
                         </ul>
                     </div>
                     <div className="upload-button">
-                        <button className="btn btn-primary">
+                        <div className="form-group">
+                            <label
+                                htmlFor="file-upload"
+                                className={`custom-button custom-btn-sm mr-2 ${customButton} `}
+                            >
+                                <FaCloudUploadAlt /> Upload Your CV
+                            </label>
+                            <input
+                                id="file-upload"
+                                type="file"
+                                name="uploadcv"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label
+                                htmlFor="file-upload"
+                                className={`custom-button custom-btn-sm mr-2 ${customButton} `}
+                            >
+                                <FaCloudUploadAlt /> Upload Your Cover Letter
+                            </label>
+                            <input
+                                id="file-upload"
+                                type="file"
+                                name="uploadcv"
+                            />
+                        </div>
+                        {/* <Button
+                            className={`custom-button custom-btn-sm mr-2 ${customButton} `}
+                            size="sm"
+                        >
+                            Learn More
+                        </Button> */}
+                        {/* <button className={}>
                             Upload Your CV
-                        </button>
-                        <button className="btn btn-primary">
+                        </button> */}
+                        {/* <button className="btn btn-primary">
                             Upload Your Cover Letter
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </Modal.Body>

@@ -440,6 +440,7 @@ function Career({ heroColor, customButton }) {
                 modalData={modalData}
                 toggleModal={toggleModal}
                 handleClose={handleClose}
+                customButton={customButton}
             />
         </Fragment>
     );

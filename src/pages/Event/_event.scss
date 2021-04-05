@@ -1,0 +1,16 @@
+.event-section {
+    // margin-bottom: 12vh;
+    .event-content {
+        padding: 100px 0;
+    }
+    &.hero-light {
+        .event-content {
+            background-color: #f6faff;
+        }
+    }
+    &.hero-dark {
+        .event-content {
+            background-color: #152e52;
+        }
+    }
+}

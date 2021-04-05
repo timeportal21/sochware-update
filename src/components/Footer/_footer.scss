@@ -1,10 +1,6 @@
 .footer-section {
-    position: relative;
-    padding-top: 30vh;
+    padding-top: 10vh;
     background-color: #071e40;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     .footer-logo img {
         width: 100% !important;
     }
@@ -65,9 +61,9 @@
 }
 
 @media (max-width: 1000px) {
-    .footer-logo {
-        margin-bottom: 15px !important;
-    }
+    // .footer-logo {
+    //     margin-bottom: 15px !important;
+    // }
     .social-links {
         margin-bottom: 10px !important;
     }

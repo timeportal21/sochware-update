@@ -17,6 +17,9 @@
         .content-row {
             margin-bottom: 178.63px !important;
         }
+        &.hero-dark {
+            background-color: #152e52;
+        }
     }
 }
 // .aboutus-section {
@@ -73,6 +76,9 @@
             }
         }
     }
+    &.hero-dark {
+        background-color: #152e52;
+    }
     .social-links {
         img {
             width: 50px !important;
@@ -86,16 +92,17 @@
 .partner-logo {
     display: flex;
     width: 100%;
-    padding: 80px;
+    padding-top: 80px;
     position: relative;
     flex-flow: row wrap;
-    // padding-left: 10%;
-    justify-content: space-around;
+    justify-content: space-between;
     .partner-circle {
         width: 100px;
+        margin-right: 2em;
+        margin-bottom: 2em;
         img {
             width: 100%;
-            justify-content: space-around;
+            justify-content: space-between;
         }
     }
 }

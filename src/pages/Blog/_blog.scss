@@ -1,0 +1,16 @@
+.blog-section {
+    // margin-bottom: 12vh;
+    .blog-content {
+        padding: 100px 0;
+    }
+    &.hero-light {
+        .blog-content {
+            background-color: #f6faff;
+        }
+    }
+    &.hero-dark {
+        .blog-content {
+            background-color: #152e52;
+        }
+    }
+}
