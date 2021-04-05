@@ -12,9 +12,16 @@ import { motion } from "framer-motion";
 import footerLogo from "../../images/sochwarelogo.png";
 
 function Footer({ logo, heroColor }) {
+    const handleTopButton = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
     return (
         <section className={`footer-section ${heroColor}`}>
-        <div className="goto-top"></div>
+            <div className="goto-top">
+                <button className="btn" onClick={handleTopButton}>
+                    {scrollToTopSvg}
+                </button>
+            </div>
             <div className="container ">
                 <div className="row">
                     <div className="col-12 col-md-7 col-lg-4">
@@ -130,6 +137,21 @@ function Footer({ logo, heroColor }) {
 }
 
 export default Footer;
+
+const scrollToTopSvg = (
+    <motion.svg
+        initial={false}
+        animate={{ y: 0, transition: { duration: 1 } }}
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        height="1em"
+        width="1em"
+    >
+        <motion.path d="M12 8.41L16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z"></motion.path>
+    </motion.svg>
+);
 
 const qrSvg = (
     <svg

@@ -21,6 +21,24 @@
             }
         }
     }
+    .goto-top {
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        button {
+            position: absolute;
+            top: 8%;
+            left: 14%;
+            font-size: 40px;
+        }
+        .btn:focus {
+            box-shadow: none;
+        }
+    }
 }
 .footer-content {
     position: relative;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.scss";
 import heroImage from "../../images/Hero-Image.png";
-import { Button } from "react-bootstrap";
+import heroImage1 from "../../images/heroImage1.png";
 import { IoChevronForwardSharp } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
@@ -41,6 +41,18 @@ function HeroSection({ heroColor, customButton }) {
                 alt="hero_image"
                 className="img-fluid hero-image"
             />
+            {/* <div className="hero-image">
+                <img
+                    src={heroImage}
+                    alt="hero_image"
+                    className="img-fluid hero-image1"
+                />
+                <img
+                    src={heroImage1}
+                    alt=""
+                    className="img-fluid hero-image2"
+                />
+            </div> */}
             {/* <div className="hero-img">
             </div> */}
         </section>
