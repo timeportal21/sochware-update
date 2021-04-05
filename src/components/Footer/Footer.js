@@ -14,6 +14,7 @@ import footerLogo from "../../images/sochwarelogo.png";
 function Footer({ logo, heroColor }) {
     return (
         <section className={`footer-section ${heroColor}`}>
+        <div className="goto-top"></div>
             <div className="container ">
                 <div className="row">
                     <div className="col-12 col-md-7 col-lg-4">
@@ -99,17 +100,21 @@ function Footer({ logo, heroColor }) {
                                 <Link to="/about">Media link</Link>
                             </li>
                             <li>
-                                <Link to="/about">Instagram</Link>
+                                <Link to="https://www.instagram.com/sochware/?hl=en">
+                                    Instagram
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/contact">Linkedin</Link>
+                                <Link to="https://www.linkedin.com/company/sochware/">
+                                    Linkedin
+                                </Link>
                             </li>
                             <li>
                                 <Link to="/service">Dribble</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="/career">Dribble</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <div className="col-12 col-md-3 text-center">{qrSvg}</div>

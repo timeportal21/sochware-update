@@ -20,6 +20,7 @@ import gautam from "../../images/teams/gautam.png";
 import dinesh from "../../images/teams/dinesh.png";
 import susan from "../../images/teams/susan.png";
 import anil from "../../images/teams/anil.png";
+import yogesh from "../../images/teams/yogesh.png";
 
 // partners
 import mars from "../../images/partners/mars.png";
@@ -80,12 +81,10 @@ function About({ heroColor, customButton, listImage }) {
 
     const [whySochware, setWhySochware] = useState([
         {
-            content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nunc quam fusce tincidunt volutpat. Sit tellus purus, sed arcu viverra id purus sem aliquam. Pretium auctor pellentesque sit amet, et. Nunc ipsum volutpat dictumst duis varius libero nisl. At consectetur a ipsum, posuere. Vitae urna dui viverra dignissim.  ",
+            content: "Makes thing easier",
         },
         {
-            content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nunc quam fusce tincidunt volutpat. Sit tellus purus, sed arcu viverra id purus sem aliquam. Pretium auctor pellentesque sit amet, et. Nunc ipsum volutpat dictumst duis varius libero nisl. At consectetur a ipsum, posuere. Vitae urna dui viverra dignissim.  ",
+            content: "Bring thoughts to life",
         },
         {
             content:
@@ -174,6 +173,11 @@ function About({ heroColor, customButton, listImage }) {
             name: "Dinesh Yadav",
             designation: "ReactJs Native Developer",
             image: dinesh,
+        },
+        {
+            name: "Yogesh",
+            designation: "UI/UX designer",
+            image: yogesh,
         },
     ]);
 
