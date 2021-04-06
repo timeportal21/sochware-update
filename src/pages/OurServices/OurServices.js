@@ -8,6 +8,7 @@ import iotTraining2 from "../../images/services/iot2.jpg";
 import iotTraining3 from "../../images/services/iot3.jpg";
 import training1 from "../../images/services/training3.jpg";
 import training5 from "../../images/services/training5.jpg";
+import hardwaremain from "../../images/services/hardwaremain.jpg";
 import hardware from "../../images/services/hardware.jpg";
 import hardware2 from "../../images/services/hardware2.jpg";
 import software1 from "../../images/services/software1.jpg";
@@ -39,7 +40,7 @@ function ContextAwareToggle({ children, eventKey, callback, customButton }) {
             className={`custom-button custom-btn-sm mr-2 ${customButton}  btn btn-primary btn-sm`}
             onClick={decoratedOnClick}
         >
-            How To Benefit
+            Clips
             {!isCurrentEventKey ? (
                 <MdKeyboardArrowRight />
             ) : (
@@ -82,7 +83,7 @@ function OurServices({ heroColor, customButton }) {
             title: "Hardware",
             content:
                 "Sochware is not just another IT company that develops software. we also focus to create futuristic solutions that supports the vision of digitally enabled Nepal. for the same, we also design, develop and provide hardware solutions to support your software backgrounds. with engineers who have spectral knowledge in the field, we assure you quality of service, unique to of our own kind.",
-            image: cpuImage,
+            image: hardwaremain,
             accordinImages: [
                 { image: iotTraining, title: "IoT Training" },
                 { image: iotTraining2, title: "Tech for Education" },
