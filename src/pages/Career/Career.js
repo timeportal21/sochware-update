@@ -85,7 +85,7 @@ function Career({ heroColor, customButton }) {
         <Fragment>
             <section className={`hire-now ${heroColor}`}>
                 <div className="container">
-                    <h1>We are hiring now</h1>
+                    {/* <h1>We are hiring now</h1>
                     <div className="filter-by d-flex justify-content-end">
                         <div className="form-group row">
                             <label htmlFor="">Filter By</label>
@@ -395,7 +395,7 @@ function Career({ heroColor, customButton }) {
                                 </div>
                             </Accordion.Collapse>
                         </Accordion>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="notified">
                     <div className="container">

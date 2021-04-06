@@ -10,8 +10,8 @@ function SochwareEnhance({ heroColor }) {
         { title: "Client", icon: clientSvg, number: 25 },
         { title: "Media", icon: mediaSvg, number: 23 },
         { title: "Staff", icon: staffSvg, number: 18 },
-        { title: "Awards", icon: collaboratorsSvg, number: 10 },
-        { title: "Awards", icon: JESvg, number: 6 },
+        { title: "Collaborators", icon: collaboratorsSvg, number: 10 },
+        { title: "Joint Experience", icon: JESvg, number: 6 },
         { title: "Trainees", icon: trainerSvg, number: 5000 },
     ]);
     return (
@@ -31,7 +31,7 @@ function SochwareEnhance({ heroColor }) {
                                 <div className={`number-show`}>
                                     <p>
                                         <AnimatedNumber
-                                            value={50}
+                                            value={data.number}
                                             duration={2000}
                                             stepPrecision={0}
                                         />{" "}
@@ -112,9 +112,9 @@ const awards = (
         variants={parentVariants}
         initial="initial"
         animate="final"
-        width="42"
+        width="58"
         height="70"
-        viewBox="0 0 42 70"
+        viewBox="0 0 58 70"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
