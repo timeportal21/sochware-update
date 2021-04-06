@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
-import light_logo from "../images/sochware.png";
-import dark_logo from "../images/sochwarelogo.png";
+import light_logo from "../images/sochware.svg";
+import dark_logo from "../images/sochwarelogo.svg";
 import sun from "../images/Sun.svg";
 import night from "../images/Moon.svg";
 import listImageLight from "../images/bullet-point.svg";

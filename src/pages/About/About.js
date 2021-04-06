@@ -81,26 +81,25 @@ function About({ heroColor, customButton, listImage }) {
 
     const [whySochware, setWhySochware] = useState([
         {
-            content: "Makes thing easier",
+            content: "Innovative Approach to solution building.",
         },
         {
-            content: "Bring thoughts to life",
-        },
-        {
-            content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nunc quam fusce tincidunt volutpat. Sit tellus purus, sed arcu viverra id purus sem aliquam. Pretium auctor pellentesque sit amet, et. Nunc ipsum volutpat dictumst duis varius libero nisl. At consectetur a ipsum, posuere. Vitae urna dui viverra dignissim.  ",
+            content: "User Based design approach.",
         },
         {
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nunc quam fusce tincidunt volutpat. Sit tellus purus, sed arcu viverra id purus sem aliquam. Pretium auctor pellentesque sit amet, et. Nunc ipsum volutpat dictumst duis varius libero nisl. At consectetur a ipsum, posuere. Vitae urna dui viverra dignissim.  ",
+                "We follow standard International practice and agile methodology.",
         },
         {
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nunc quam fusce tincidunt volutpat. Sit tellus purus, sed arcu viverra id purus sem aliquam. Pretium auctor pellentesque sit amet, et. Nunc ipsum volutpat dictumst duis varius libero nisl. At consectetur a ipsum, posuere. Vitae urna dui viverra dignissim.  ",
+                "Client's need based develop with in-field expertise and input.",
+        },
+        {
+            content: "We provide a complete tech solution.",
         },
         {
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nunc quam fusce tincidunt volutpat. Sit tellus purus, sed arcu viverra id purus sem aliquam. Pretium auctor pellentesque sit amet, et. Nunc ipsum volutpat dictumst duis varius libero nisl. At consectetur a ipsum, posuere. Vitae urna dui viverra dignissim.  ",
+                "We just dont develop system but also equip you with its knowledge through continous communication.",
         },
     ]);
     const [ourTeam, setOurTeam] = useState([

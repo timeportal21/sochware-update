@@ -204,7 +204,7 @@ function Contact({ heroColor }) {
                     </div>
                 </div>
             </div>
-            <div className="testimonial-section">
+            {/* <div className="testimonial-section">
                 <div className="testimonial-header">
                     <div className="container">
                         <div className={`section-title ${heroColor} mt-5`}>
@@ -248,7 +248,7 @@ function Contact({ heroColor }) {
                         </Slider>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
