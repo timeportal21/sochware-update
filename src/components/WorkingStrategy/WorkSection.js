@@ -59,17 +59,12 @@ export default WorkSection;
 
 const parentVariants = {
     initial: {
-        // x: 1000,
         opacity: 0,
     },
     final: {
-        // x: 0,
         opacity: 1,
         transition: {
             staggerChildren: 0.7,
-            // delay: 0.2,
-            // duration: 0.6,
-            // when: "afterChild    ren"
         },
     },
 };
@@ -80,20 +75,10 @@ const childVariants = {
         pathLength: 0,
     },
     final: {
-        // x: 0,
         opacity: 1,
-        // fill: "#2ACAE0",
         pathLength: 1,
         transition: {
-            // duration: 20,
-            // pathLength: {
-            //     // delay: 1,
-            //     duration: 1,
-            // },
             duration: 1,
-            // fill: {
-            //     delay: 1.7,
-            // },
         },
     },
 };
@@ -105,20 +90,11 @@ const fillVariants = {
         pathLength: 0,
     },
     final: {
-        // x: 0,
         opacity: 1,
         fill: "rgba(7, 30, 64,1)",
         pathLength: 1,
         transition: {
-            // duration: 20,
-            // pathLength: {
-            //     // delay: 1,
-            //     duration: 1,
-            // },
             duration: 1,
-            // fill: {
-            //     delay: 1.7,
-            // },
         },
     },
 };
@@ -129,15 +105,9 @@ const signVariants = {
         pathLength: 0,
     },
     final: {
-        // x: 0,
-        // opacity: 1,
         fill: "rgba(255, 192, 0,1)",
-        pathLength: [0,1,0],
+        pathLength: [0, 1, 0],
         transition: {
-            // duration: 20,
-            // pathLength: {
-            //     duration: 1,
-            // },
             duration: 1.5,
             fill: {
                 delay: 1.6,
@@ -244,13 +214,7 @@ const coffeeSvg = (
         viewBox="0 0 60 62"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-    >
-        {/* <motion.g
-            variants={parentVariants}
-            width="60"
-            height="56"
-            viewBox="0 0 60 56"
-        > */}
+    >   
         <motion.path
             variants={fillVariants}
             d="M2.94058 50.5488H45.6274C46.2564 50.5488 46.8596 50.8072 47.3043 51.2671C47.7491 51.727 47.9989 52.3508 47.9989 53.0012C47.9989 53.6516 47.7491 54.2753 47.3043 54.7352C46.8596 55.1951 46.2564 55.4535 45.6274 55.4535H2.94058C2.31163 55.4535 1.70843 55.1951 1.26369 54.7352C0.818945 54.2753 0.569092 53.6516 0.569092 53.0012C0.569092 52.3508 0.818945 51.727 1.26369 51.2671C1.70843 50.8072 2.31163 50.5488 2.94058 50.5488Z"
