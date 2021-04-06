@@ -1,30 +1,23 @@
 .about-section {
-    margin-top: 44px;
-    .card {
-        background-color: transparent !important;
-        border: none !important;
-        margin-bottom: 2rem;
-        padding: 2.4rem;
-    }
-    .card-body {
-        .card-text {
-            font-size: 18px;
-            font-weight: 400;
-            text-align: justify;
-        }
-    }
+    padding-top: 44px;
     .about-content {
         .content-row {
             margin-bottom: 178.63px !important;
         }
-        &.hero-dark {
-            background-color: #152e52;
+        &.hero-light {
+            .card {
+                background-color: transparent !important;
+                border: none;
+            }
         }
     }
+    &.hero-dark {
+        background-color: #152e52;
+    }
+    &.hero-light {
+        background-color: #f6faff;
+    }
 }
-// .aboutus-section {
-//     margin-bottom: 7em;
-// }
 
 .why-sochware {
     ul {
@@ -39,25 +32,32 @@
         }
     }
 }
+
 .team-slider {
     .slider-content {
-        img {
-            width: 150px !important;
-            height: auto !important;
+        .card {
+            background-color: transparent !important;
+            border: none !important;
+
+            flex-direction: row;
+            align-items: center;
         }
+        .card-title {
+            font-weight: bold;
+        }
+        .card img {
+            width: 30%;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: calc(0.25rem - 1px);
+        }
+
         .social-links {
             a {
                 color: #fff !important;
-                font-size: 28px;
+                font-size: 26px;
                 padding-right: 12px;
             }
         }
-        .text-muted {
-            color: #fff !important;
-        }
-    }
-    .card {
-        box-shadow: unset !important;
     }
     .slick-dots {
         position: unset !important;
@@ -76,9 +76,9 @@
             }
         }
     }
-    &.hero-dark {
-        background-color: #152e52;
-    }
+    // &.hero-dark {
+    //     background-color: #152e52;
+    // }
     .social-links {
         img {
             width: 50px !important;
@@ -87,7 +87,7 @@
     }
 }
 .partners {
-    margin: 7em 0 7em 0;
+    padding: 7em 0 7em 0;
 }
 .partner-logo {
     display: flex;
@@ -121,5 +121,26 @@
     }
     .about-section .about-content .content-row {
         margin-bottom: 45.63px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slider-content {
+        .card-body {
+            padding: 0.5em 1.2em;
+        }
+        .card-body .card-text {
+            margin: 0;
+        }
+        .card img {
+            width: 50%;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .slider-content {
+        .card img {
+            width: 40%;
+        }
     }
 }

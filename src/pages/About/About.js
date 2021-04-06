@@ -200,7 +200,7 @@ function About({ heroColor, customButton, listImage }) {
         // { logo: "8", link: "lwal" },
     ]);
     return (
-        <div className="about-section">
+        <div className={`about-section ${heroColor}`}>
             <div className="container">
                 <div className="aboutus-section">
                     <div className={`section-title ${heroColor}`}>
@@ -250,7 +250,121 @@ function About({ heroColor, customButton, listImage }) {
                         <Slider {...settings}>
                             {ourTeam.map((data, i) => (
                                 <div className="slider-content" key={i}>
-                                    <div className="card mr-3">
+                                    <div className="card">
+                                        <div className="row">
+                                            <div className="col-auto">
+                                                <img
+                                                    src={data.image}
+                                                    className="img-fluid"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <div className="card-block px-2">
+                                                    <h4 className="card-title">
+                                                        {data.name}
+                                                    </h4>
+                                                    <div className="card-text">
+                                                        {data.designation}
+                                                    </div>
+                                                    <div className="social-links d-flex">
+                                                        {data.facebook ? (
+                                                            <a
+                                                                href={
+                                                                    data.facebook
+                                                                }
+                                                            >
+                                                                <FaFacebookSquare />
+                                                            </a>
+                                                        ) : null}
+                                                        {data.instagram ? (
+                                                            <a
+                                                                href={
+                                                                    data.instagram
+                                                                }
+                                                            >
+                                                                <FaInstagram />
+                                                            </a>
+                                                        ) : null}
+
+                                                        {data.mail ? (
+                                                            <a href={data.mail}>
+                                                                <FaEnvelope />
+                                                            </a>
+                                                        ) : null}
+                                                        {data.twitter ? (
+                                                            <a
+                                                                href={
+                                                                    data.twitter
+                                                                }
+                                                            >
+                                                                <FaTwitter />
+                                                            </a>
+                                                        ) : null}
+
+                                                        {data.linkedin ? (
+                                                            <a
+                                                                href={
+                                                                    data.linkedin
+                                                                }
+                                                            >
+                                                                <FaLinkedin />
+                                                            </a>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* <div className="card">
+                                        <img
+                                            src={data.image}
+                                            className="card-img-top"
+                                            alt="..."
+                                        />
+                                        <div className="card-body">
+                                            <h5 className="card-title">
+                                                {data.name}
+                                            </h5>
+                                            <p className="card-text">
+                                                <small className="text-muted">
+                                                    {data.designation}
+                                                </small>
+                                            </p>
+                                            <div className="social-links d-flex">
+                                                {data.facebook ? (
+                                                    <a href={data.facebook}>
+                                                        <FaFacebookSquare />
+                                                    </a>
+                                                ) : null}
+                                                {data.instagram ? (
+                                                    <a href={data.instagram}>
+                                                        <FaInstagram />
+                                                    </a>
+                                                ) : null}
+
+                                                {data.mail ? (
+                                                    <a href={data.mail}>
+                                                        <FaEnvelope />
+                                                    </a>
+                                                ) : null}
+                                                {data.twitter ? (
+                                                    <a href={data.twitter}>
+                                                        <FaTwitter />
+                                                    </a>
+                                                ) : null}
+
+                                                {data.linkedin ? (
+                                                    <a href={data.linkedin}>
+                                                        <FaLinkedin />
+                                                    </a>
+                                                ) : null}
+                                            </div>
+                                        </div>
+                                    </div> */}
+
+                                    {/* <div className="card mr-3">
                                         <div className="row no-gutters justify-content-center">
                                             <div className="col-md-3">
                                                 <img
@@ -320,7 +434,7 @@ function About({ heroColor, customButton, listImage }) {
                                         <p className="container mt-5">
                                             {data.content}
                                         </p>
-                                    </div>
+                                    </div> */}
                                 </div>
                             ))}
                         </Slider>
