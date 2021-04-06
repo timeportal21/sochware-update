@@ -53,11 +53,18 @@
 }
 
 .text-area-message {
-    position: relative;
+    // position: relative;
     button {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        // bottom: 0;
+        right: 15px;
+        &.hero-light {
+            background-color: #071e40;
+            color: #fff !important;
+        }
+        &.hero-dark {
+            background-color: #ffc000;
+        }
     }
 }
 

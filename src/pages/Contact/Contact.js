@@ -157,9 +157,10 @@ function Contact({ heroColor }) {
                                                                 ></textarea>
                                                                 <button
                                                                     type="submit"
-                                                                    className="btn btn-md"
+                                                                    className={`btn btn-md ${heroColor}`}
                                                                 >
-                                                                    <BsFillChatDotsFill />
+                                                                    Submit
+                                                                    {/* <BsFillChatDotsFill /> */}
                                                                 </button>
                                                             </div>
                                                         </div>
