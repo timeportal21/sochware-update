@@ -281,11 +281,9 @@ const staffSvg = (
         variants={parentVariants}
         initial="initial"
         animate="final"
-        width="64"
+        width="81"
         height="70"
-        viewBox="0 0 64 65"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 81 70"
     >
         <motion.path
             variants={signVariants}
@@ -349,9 +347,9 @@ const JESvg = (
         variants={parentVariants}
         initial="initial"
         animate="final"
-        width="54"
-        height="60"
-        viewBox="0 0 54 60"
+        width="81"
+        height="70"
+        viewBox="0 0 81 70"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >

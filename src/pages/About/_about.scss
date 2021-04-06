@@ -1,6 +1,9 @@
 .about-section {
     padding-top: 44px;
     .about-content {
+        .card {
+            border: none;
+        }
         .content-row {
             margin-bottom: 178.63px !important;
         }
@@ -17,6 +20,9 @@
     &.hero-light {
         background-color: #f6faff;
     }
+}
+.aboutus-section {
+    padding-bottom: 16px;
 }
 
 .why-sochware {
