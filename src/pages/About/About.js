@@ -209,7 +209,9 @@ function About({ heroColor, customButton, listImage }) {
                         {aboutContent.map((data, i) => (
                             <div className="card" key={i}>
                                 <div className="card-body">
-                                    <p className="card-text">{data.content}</p>
+                                    <p className="card-text text-justify">
+                                        {data.content}
+                                    </p>
                                 </div>
                             </div>
                         ))}

@@ -13,13 +13,7 @@
         background-color: inherit;
     }
 }
-.contact-content {
-    .card {
-        .card-body {
-            padding: 6rem !important;
-        }
-    }
-}
+
 .tags {
     button {
         margin-right: 4px;
@@ -56,7 +50,7 @@
     // position: relative;
     button {
         position: absolute;
-        // bottom: 0;
+        top: 200px;
         right: 15px;
         &.hero-light {
             background-color: #071e40;
@@ -96,7 +90,13 @@
         .card {
             .card-body {
                 padding: unset !important;
+                .row {
+                    padding: 12px;
+                }
             }
         }
+    }
+    .tag-content {
+        margin-top: 3rem;
     }
 }

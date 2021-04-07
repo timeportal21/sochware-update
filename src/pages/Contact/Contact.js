@@ -152,7 +152,7 @@ function Contact({ heroColor }) {
                                                                     name=""
                                                                     id=""
                                                                     cols="30"
-                                                                    rows="8"
+                                                                    rows="6"
                                                                     className="form-control"
                                                                 ></textarea>
                                                                 <button
@@ -169,7 +169,7 @@ function Contact({ heroColor }) {
                                             </form>
                                         </div>
                                     </div>
-                                    <div className="col-xs-12 col-md-4">
+                                    <div className="col-xs-12 col-md-4 tag-content">
                                         <label htmlFor="">Tags</label>
                                         <div className="tags">
                                             <button className="btn btn-outline-info">
