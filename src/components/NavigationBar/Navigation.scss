@@ -134,6 +134,10 @@ header {
 }
 
 @media (max-width: 991.98px) {
+    .navbar-nav {
+        align-items: center;
+        top: 30px;
+    }
     .dark-class,
     .light-class {
         .animation {
@@ -143,7 +147,7 @@ header {
     .toggle-button {
         img {
             position: absolute;
-            left: 53px;
+            // left: 53px;
         }
     }
 }

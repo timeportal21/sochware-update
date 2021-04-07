@@ -222,7 +222,10 @@ function OurServices({ heroColor, customButton }) {
                                             {data.accordinImages &&
                                                 data.accordinImages.map(
                                                     (accordinImage, i) => (
-                                                        <div className="accordion-content">
+                                                        <div
+                                                            className="accordion-content"
+                                                            key={i}
+                                                        >
                                                             <div className="image-service">
                                                                 {/* <a
                                                                     href=""
