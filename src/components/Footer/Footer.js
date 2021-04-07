@@ -9,7 +9,7 @@ import miniRocketIcon from "../../images/mini-rocket.svg";
 import { Form, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import footerLogo from "../../images/sochwarelogo.png";
+import footerLogo from "../../images/sochwarelogo.svg";
 
 function Footer({ logo, heroColor }) {
     // const handleTopButton = () => {
