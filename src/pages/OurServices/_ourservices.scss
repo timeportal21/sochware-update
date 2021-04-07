@@ -121,4 +121,10 @@
     .our-services .service-content .content-row {
         margin-bottom: 45.63px !important;
     }
+    .swservice-row {
+        flex-direction: column;
+        .accordion-content {
+            margin-bottom: 34px;
+        }
+    }
 }
