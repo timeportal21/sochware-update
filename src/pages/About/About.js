@@ -34,6 +34,7 @@ import somen from "../../images/partners/somen.png";
 import suswasthya from "../../images/partners/suswasthya.png";
 
 import Slider from "react-slick";
+import { Card, CardDeck } from "react-bootstrap";
 
 function About({ heroColor, customButton, listImage }) {
     const settings = {
@@ -248,194 +249,61 @@ function About({ heroColor, customButton, listImage }) {
                 </div>
                 <div className={`team-slider ${heroColor}`}>
                     <div className="container">
-                        <Slider {...settings}>
+                        <Slider {...settings} className="slider-content">
                             {ourTeam.map((data, i) => (
-                                <div className="slider-content" key={i}>
-                                    <div className="card">
-                                        <div className="row">
-                                            <div className="col-auto">
-                                                <img
-                                                    src={data.image}
-                                                    className="img-fluid"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div className="col">
-                                                <div className="card-block px-2">
-                                                    <h4 className="card-title">
-                                                        {data.name}
-                                                    </h4>
-                                                    <div className="card-text">
-                                                        {data.designation}
-                                                    </div>
-                                                    <div className="social-links d-flex">
-                                                        {data.facebook ? (
-                                                            <a
-                                                                href={
-                                                                    data.facebook
-                                                                }
-                                                            >
-                                                                <FaFacebookSquare />
-                                                            </a>
-                                                        ) : null}
-                                                        {data.instagram ? (
-                                                            <a
-                                                                href={
-                                                                    data.instagram
-                                                                }
-                                                            >
-                                                                <FaInstagram />
-                                                            </a>
-                                                        ) : null}
-
-                                                        {data.mail ? (
-                                                            <a href={data.mail}>
-                                                                <FaEnvelope />
-                                                            </a>
-                                                        ) : null}
-                                                        {data.twitter ? (
-                                                            <a
-                                                                href={
-                                                                    data.twitter
-                                                                }
-                                                            >
-                                                                <FaTwitter />
-                                                            </a>
-                                                        ) : null}
-
-                                                        {data.linkedin ? (
-                                                            <a
-                                                                href={
-                                                                    data.linkedin
-                                                                }
-                                                            >
-                                                                <FaLinkedin />
-                                                            </a>
-                                                        ) : null}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* <div className="card">
+                                <div className="card">
+                                    <div className="card-body text-center">
                                         <img
                                             src={data.image}
-                                            className="card-img-top"
-                                            alt="..."
+                                            className="rounded-circle center team-image mx-auto"
+                                            alt={data.name}
                                         />
-                                        <div className="card-body">
-                                            <h5 className="card-title">
-                                                {data.name}
-                                            </h5>
-                                            <p className="card-text">
-                                                <small className="text-muted">
-                                                    {data.designation}
-                                                </small>
-                                            </p>
-                                            <div className="social-links d-flex">
-                                                {data.facebook ? (
+                                        <h5 className="card-title mt-2 mb-1">
+                                            {data.name}
+                                        </h5>
+                                        <span className="fs-2 mb-3">
+                                            {data.designation}
+                                        </span>
+                                        <ul className="list-inline">
+                                            {data.facebook ? (
+                                                <li className="list-inline-item">
                                                     <a href={data.facebook}>
                                                         <FaFacebookSquare />
                                                     </a>
-                                                ) : null}
-                                                {data.instagram ? (
+                                                </li>
+                                            ) : null}
+                                            {data.instagram ? (
+                                                <li className="list-inline-item">
                                                     <a href={data.instagram}>
                                                         <FaInstagram />
                                                     </a>
-                                                ) : null}
+                                                </li>
+                                            ) : null}
 
-                                                {data.mail ? (
+                                            {data.mail ? (
+                                                <li className="list-inline-item">
                                                     <a href={data.mail}>
                                                         <FaEnvelope />
                                                     </a>
-                                                ) : null}
-                                                {data.twitter ? (
+                                                </li>
+                                            ) : null}
+                                            {data.twitter ? (
+                                                <li className="list-inline-item">
                                                     <a href={data.twitter}>
                                                         <FaTwitter />
                                                     </a>
-                                                ) : null}
+                                                </li>
+                                            ) : null}
 
-                                                {data.linkedin ? (
+                                            {data.linkedin ? (
+                                                <li className="list-inline-item">
                                                     <a href={data.linkedin}>
                                                         <FaLinkedin />
                                                     </a>
-                                                ) : null}
-                                            </div>
-                                        </div>
-                                    </div> */}
-
-                                    {/* <div className="card mr-3">
-                                        <div className="row no-gutters justify-content-center">
-                                            <div className="col-md-3">
-                                                <img
-                                                    src={data.image}
-                                                    alt="..."
-                                                    className="img-fluid"
-                                                />
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <h5 className="card-title">
-                                                        {data.name}
-                                                    </h5>
-                                                    <p className="card-text">
-                                                        <small className="text-muted">
-                                                            {data.designation}
-                                                        </small>
-                                                    </p>
-                                                    <div className="social-links d-flex">
-                                                        {data.facebook ? (
-                                                            <a
-                                                                href={
-                                                                    data.facebook
-                                                                }
-                                                            >
-                                                                <FaFacebookSquare />
-                                                            </a>
-                                                        ) : null}
-                                                        {data.instagram ? (
-                                                            <a
-                                                                href={
-                                                                    data.instagram
-                                                                }
-                                                            >
-                                                                <FaInstagram />
-                                                            </a>
-                                                        ) : null}
-
-                                                        {data.mail ? (
-                                                            <a href={data.mail}>
-                                                                <FaEnvelope />
-                                                            </a>
-                                                        ) : null}
-                                                        {data.twitter ? (
-                                                            <a
-                                                                href={
-                                                                    data.twitter
-                                                                }
-                                                            >
-                                                                <FaTwitter />
-                                                            </a>
-                                                        ) : null}
-
-                                                        {data.linkedin ? (
-                                                            <a
-                                                                href={
-                                                                    data.linkedin
-                                                                }
-                                                            >
-                                                                <FaLinkedin />
-                                                            </a>
-                                                        ) : null}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p className="container mt-5">
-                                            {data.content}
-                                        </p>
-                                    </div> */}
+                                                </li>
+                                            ) : null}
+                                        </ul>
+                                    </div>
                                 </div>
                             ))}
                         </Slider>

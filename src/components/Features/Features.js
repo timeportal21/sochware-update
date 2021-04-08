@@ -63,7 +63,9 @@ function Features({ heroColor, customButton, borderButton }) {
                                     </div>
                                     <div className={`group-title`}>
                                         <h2>{data.title}</h2>
-                                        <p>{data.detail}</p>
+                                        <p className="text-justify">
+                                            {data.detail}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
