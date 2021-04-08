@@ -9,12 +9,16 @@
         position: absolute;
         bottom: 0;
     }
+    .qr-image {
+        width: 150px;
+    }
     &.hero-light {
         background-color: #071e40;
     }
 
     .footer-link {
         ul {
+            padding: 0;
             list-style-type: none;
             li a {
                 color: #fff;
