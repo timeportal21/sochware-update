@@ -44,8 +44,8 @@ function About({ heroColor, customButton, listImage }) {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        autoplay: false,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -171,7 +171,7 @@ function About({ heroColor, customButton, listImage }) {
         // },
         {
             name: "Dinesh Yadav",
-            designation: "ReactJs Native Developer",
+            designation: "React Native Developer",
             image: dinesh,
         },
         {
