@@ -44,7 +44,7 @@ function About({ heroColor, customButton, listImage }) {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         responsive: [
             {
