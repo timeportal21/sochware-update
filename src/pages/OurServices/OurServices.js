@@ -8,6 +8,9 @@ import iotTraining2 from "../../images/services/iot2.jpg";
 import iotTraining3 from "../../images/services/iot3.jpg";
 import training1 from "../../images/services/training3.jpg";
 import training5 from "../../images/services/training5.jpg";
+import training7 from "../../images/services/training7.jpg";
+import training8 from "../../images/services/training8.jpg";
+import training9 from "../../images/services/training9.jpg";
 import hardwaremain from "../../images/services/hardwaremain.jpg";
 import hardware from "../../images/services/hardware.jpg";
 import hardware2 from "../../images/services/hardware2.jpg";
@@ -61,9 +64,9 @@ function OurServices({ heroColor, customButton }) {
             accordinImages: [
                 { image: iotTraining, title: "IoT Training" },
                 { image: training1, title: "Tech for Education" },
-                { image: iotTraining, title: "IoT Training" },
-                { image: iotTraining, title: "IoT Training" },
-                { image: iotTraining, title: "IoT Training" },
+                { image: training7, title: "IoT Training" },
+                { image: training8, title: "IoT Training" },
+                { image: training9, title: "IoT Training" },
             ],
         },
         {
