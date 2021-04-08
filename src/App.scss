@@ -45,6 +45,12 @@
     text-decoration: none !important;
     border-radius: 6px;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px !important;
+    svg {
+        font-size: 25px;
+    }
 }
 
 .dark-btn {
@@ -64,7 +70,7 @@
 }
 
 .custom-btn-lg {
-    font-size: 30px !important;
+    font-size: 25px !important;
 }
 
 .custom-btn-sm {

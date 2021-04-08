@@ -6,9 +6,9 @@
 .service-content {
     .content-row {
         margin-bottom: 125px !important;
-        img {
-            filter: grayscale(1);
-        }
+        // img {
+        //     filter: grayscale(1);
+        // }
     }
     .content-head h2 {
         font-weight: 700 !important;
@@ -52,7 +52,7 @@
         }
         img {
             margin-right: 4px;
-            filter: grayscale(1);
+            // filter: grayscale(1);
             width: 100%;
             height: auto;
             object-fit: contain;
