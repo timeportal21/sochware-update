@@ -50,7 +50,9 @@
         ul {
             font-size: 25px;
             li {
-                margin: 0 15px;
+                a {
+                    margin: 0 15px;
+                }
             }
         }
         .team-image {
