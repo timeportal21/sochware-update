@@ -53,7 +53,7 @@ function Features({ heroColor, customButton, borderButton }) {
                                 key={i}
                             >
                                 <div className={`group-feature ${heroColor}`}>
-                                    <div className="group-image">
+                                    <div className="group-image w-100 text-center">
                                         {data.image}
                                         {/* <img
                                             src={data.image}

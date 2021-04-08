@@ -39,11 +39,11 @@ function WorkSection({ heroColor }) {
                                 key={i}
                             >
                                 <div className="group-feature">
-                                    <div className="group-image">
+                                    <div className="group-image w-100 text-center">
                                         {data.icon}
                                     </div>
                                     <div className={`work-title ${heroColor}`}>
-                                        <p>{data.content}</p>
+                                        <p className="text-justify">{data.content}</p>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +214,7 @@ const coffeeSvg = (
         viewBox="0 0 60 62"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-    >   
+    >
         <motion.path
             variants={fillVariants}
             d="M2.94058 50.5488H45.6274C46.2564 50.5488 46.8596 50.8072 47.3043 51.2671C47.7491 51.727 47.9989 52.3508 47.9989 53.0012C47.9989 53.6516 47.7491 54.2753 47.3043 54.7352C46.8596 55.1951 46.2564 55.4535 45.6274 55.4535H2.94058C2.31163 55.4535 1.70843 55.1951 1.26369 54.7352C0.818945 54.2753 0.569092 53.6516 0.569092 53.0012C0.569092 52.3508 0.818945 51.727 1.26369 51.2671C1.70843 50.8072 2.31163 50.5488 2.94058 50.5488Z"
