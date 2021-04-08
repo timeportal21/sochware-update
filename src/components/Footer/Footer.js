@@ -54,9 +54,9 @@ function Footer({ logo, heroColor }) {
                                 <a href="https://twitter.com/sochware?lang=en">
                                     <img src={twitterIcon} alt="" />
                                 </a>
-                                <a href="https://www.facebook.com">
+                                {/* <a href="https://www.facebook.com">
                                     <img src={dribbleIcon} alt="" />
-                                </a>
+                                </a> */}
                             </div>
                             <div className="feedback-content dark text-center">
                                 <p>Got Some Feedback</p>
@@ -66,7 +66,6 @@ function Footer({ logo, heroColor }) {
                                             <Form.Control
                                                 type="text"
                                                 required
-                                                placeholder="Send Us Your Feedback...."
                                             />
                                             <InputGroup.Prepend>
                                                 <InputGroup.Text>
@@ -119,9 +118,9 @@ function Footer({ logo, heroColor }) {
                                     Linkedin
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="/service">Dribble</Link>
-                            </li>
+                            </li> */}
                             {/* <li>
                                 <Link to="/career">Dribble</Link>
                             </li> */}
